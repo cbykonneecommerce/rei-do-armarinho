@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title> Home</title>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body id="home-page">
+
+    <div class="page">
+
+        <vtex:template id="Header" />
+
+        <!--  SubTemplate: Header -->
+
+        <!-- /SubTemplate: Header -->
+        <section class="container-fluid">
+            <div class="fullbanner hidden-xs">
+                <vtex:contentPlaceHolder id="bannersegmentado" />
+            </div><!-- .fullbanner -->
+            <div class="fullbanner visible-xs">
+                <vtex:contentPlaceHolder id="bannersegmentadomob" />
+            </div><!-- .fullbanner -->
+        </section>
+
+        <div class="politicas-comerciais-faixa">
+            <div class="politicas-comerciais container visible-md visible-lg">
+                <ul>
+                    <li>
+                        <img src="/arquivos/frete.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="/arquivos/cartao.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="/arquivos/itau.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="/arquivos/boleto.png" alt="" />
+                    </li>
+                </ul>
+            </div>
+
+            <div class="owl-carousel owl-theme visible-xs visible-sm" id="carouselpropostas">
+                <div class="item">
+
+                    <img src="/arquivos/frete.png" alt="" />
+                </div>
+                <div class="item">
+
+                    <img src="/arquivos/cartao.png" alt="" />
+
+
+                </div>
+                <div class="item">
+                    <img src="/arquivos/itau.png" alt="" />
+
+                </div>
+                <div class="item">
+                    <img src="/arquivos/boleto.png" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <section id="home-content" class="container">
+
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="/arquivos/lancamentos.png" alt=""/>
+                </div>
+
+                <div class="col-sm-10">
+                    <div class="showcase-default showcase-owl">
+                        <vtex:contentPlaceHolder id="Lançamentos" />
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="categorias-em-destaque">
+                <h3>CATEGORIAS EM DESTAQUE</h3>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href=""> <img src="" alt=""/> </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href=""> <img src="" alt=""/> </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href=""> <img src="" alt=""/> </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href=""> <img src="" alt=""/> </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href=""> <img src="" alt=""/> </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href=""> <img src="" alt=""/> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="/arquivos/lancamentos.png" alt=""/>
+                </div>
+
+                <div class="col-sm-10">
+                    <div class="showcase-default showcase-owl">
+                        <vtex:contentPlaceHolder id="agulhas" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="showcase-default showcase-owl">
+                    <vtex:contentPlaceHolder id="Ofertas" />
+                </div>
+            </div>
+
+            <div class="row">
+                <h3>NAVEGUE PELAS MARCAS</h3>
+                    <div class="owl-carousel owl-theme" id="carouselmarcas" style="margin-top: 2em;" >
+                 
+                    
+                    <div class="item"><a href="#"><img src="/arquivos/britania.png" alt="Owl Image"/></a></div>
+                    <div class="item"><a href="#"><img src="/arquivos/gtex.png" alt="Owl Image"/></a></div>
+                    <div class="item"><a href="#"><img src="/arquivos/lantecor.png" alt="Owl Image"/></a></div>
+                    <div class="item"><a href="#"><img src="/arquivos/zanotti.png" alt="Owl Image"/></a></div>
+                    <div class="item"><a href="#"><img src="/arquivos/estilotex.png" alt="Owl Image"/></a></div>
+                    
+                </div>
+                <style>
+                    #carouselmarcas .item {
+                           text-align: center;
+                    }
+                </style>
+            </div>
+
+                <div class="row">
+                    <h3>DEPOIMENTOS DE NOSSOS CLIENTES</h3>
+                </div>
+
+
+        </section><!-- #content -->
+
+
+
+
+
+
+        <div id="category-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="Footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+</body>
+<vtex:template id="commonScripts" />
+
+</html>

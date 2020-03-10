@@ -1,5 +1,5 @@
 * {
-    font-family: "Lato";
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
@@ -35,39 +35,39 @@
     border-color: transparent !important;
 }
 
-.link-logo img {
-    max-width: 198px;
+
+
+.header .search .busca {
+    border: 1px solid #390D0C;
+    border-radius: 40px;
 }
 
 .fulltext-search-box {
-    color: black !important;
-    border-top-color: transparent !important;
-    border-left-color: transparent !important;
-    border-right-color: transparent !important;
-    border-bottom: 1px solid #949494 !important;
-    border-radius: 0px !important;
+    color: #4F4F4F !important;
+    /* border-radius: 20px !important; */
     outline-style: none;
     box-shadow: none;
+    border-right: transparent !important;
+    border-radius: 40px !important;
+    font-size: 1.4em;
+    height: 3.5em;
+    border: none !important;
 }
 
 .btn-buscar {
     background-image: url(/arquivos/lupa.png) !important;
     background-repeat: no-repeat !important;
+    background-size: contain;
+    background-position: center center;
     color: transparent !important;
-    border-color: transparent !important;
     outline-style: none;
     box-shadow: none;
-    border: none;
+    border: none !important;
     background-color: white !important;
-    max-width: 15px;
-    background-position: center;
-    border-top-color: transparent !important;
-    border-left-color: transparent !important;
-    border-right-color: transparent !important;
-    border-bottom: 1px solid #949494 !important;
-    background-size: contain;
-    border-radius: 0px !important;
-    margin-left: -2.5%;
+    /* border-radius: 0px 40px 40px 0px !important; */
+    
+    border-radius: 0 !important;
+    background-color: transparent !important;
 }
 
 .header .search {
@@ -131,27 +131,27 @@
     font-weight: 400 !important;
 }
 
+.depto-nav-area {
+    background-color: #390D0C;
+    margin-top: 1em;
+}
+
 .deptos ul {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     margin-top: 12px;
-    margin-bottom: 0px;
+    margin-bottom: 12px;
 }
 
 .deptos ul li a {
     font-size: 13px;
     line-height: 16px;
-    color: #8B8B8B;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.deptos ul li a:hover {
-    border-bottom: solid 1px #8D7573;
-    color: #8D7573;
-    transition: all 0.2s ease;
-}
 
 .deptonav {
     background-color: #FCFCFC;
@@ -289,7 +289,7 @@
         align-items: center;
     }
     .header-container {
-        padding-bottom: 24px
+        padding-top: 16px;
     }
 }
 

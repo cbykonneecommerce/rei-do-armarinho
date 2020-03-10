@@ -3,24 +3,7 @@
 
  <header class="header-container">
      
-    <div class="welcome-bar hidden-xs" style="border-bottom: none!important; background-color: white !important;padding: 0;">
-        <div class="container">
-          <div class="row">
-    
-            <div class="help-menu col-xs-3 col-xs-offset-9 col-sm-6 col-sm-offset-6">
-              <ul class="text-center list-inline">
-                <li ><span><img src="/arquivos/pin.png" style="max-width: 16px;"/>
-                    ATENDIMENTO
-                </span></li>
-                <li ><span><img src="/arquivos/foneouvido.png" style="max-width: 16px;"/>
-                    NOSSAS LOJAS
-                </span></li>
-               
-              </ul>
-            </div><!-- .help-menu -->
-          </div><!-- .row -->
-        </div><!-- .container -->
-      </div><!-- .welcome-bar -->
+   
  
      <div class="header" style="margin-bottom: -6px;padding: 0;margin-top: -10px;">
          <div class="container">
@@ -40,7 +23,7 @@
                          <div class="menu-mobile-account">
                                 <hr />
                                 <ul>
-                                    <li class="link-login"><a href="/account" title="Fazer Login"> <img src="/arquivos/BONECO2.png" alt="" style="max-width: 18px"/> ENTRAR/CADASTRE-SE</a></li>
+                                    <li class="link-login"><a href="/account" title="Fazer Login"> <img src="/arquivos/boneconome.png" alt="" style="max-width: 18px"/> ENTRAR/CADASTRE-SE</a></li>
                                     
                                 </ul>
                             </div>
@@ -62,7 +45,7 @@
  
                  <div class="logo col-xs-6 col-sm-3 col-md-2 col-lg-2">
                      <a href="/" title="STORE" class="link-logo">
-                        <img src="/arquivos/logodurval.png" alt="Logo" />
+                        <img src="/arquivos/logorei.png" alt="Logo" />
                      </a>
                  </div>
                  <!-- .logo -->
@@ -76,33 +59,35 @@
                     
                  </div><!-- .mini-cart-xs -->
                  
-                 <div class="search col-xs-12 col-sm-5 col-md-4 col-lg-4 col-lg-offset-6">
+                 <div class="search col-xs-12 col-sm-5 col-md-4 col-lg-7 col-lg-offset-1">
                      <vtex.cmc:fullTextSearchBox/>
                  </div><!-- .search -->
                  
-                 <div class="sing-in col-xs-2 col-sm-3 col-md-3 col-lg-3 text-center hidden-xs">
+                 <div class="sing-in col-xs-2 col-sm-3 col-md-3 col-lg-4 text-center hidden-xs">
 
                     
                         <ul class="nav navbar-nav">
 
+                                <li id="usuario-giftlist">
+                                        <a href="/" title="B2B" class="btn btn-default btn-orders">
+                                            <img src="/arquivos/atacadonome.png" style="max-height: 50px;"/>
+                                        </a>
+                                </li>
+
                                 <li class="dropdown" id="usuario-login">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/arquivos/BONECO2.png" style="max-width: 15px"/></a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/arquivos/boneconome.png" style="max-height: 50px;"/></a>
                                         <ul class="dropdown-menu" id="drop-login">
                                           <li><a href="/account" title="Fazer Login" class="btn btn-default btn-login">ENTRAR/CADASTRE-SE</a></li>
                                           <li><a href="/account/orders" title="Meus Pedidos" class="btn btn-default btn-orders">MEUS PEDIDOS</a></li>
                                        
                                         </ul>
                                       </li>
-                            <li id="usuario-giftlist">
-                                    <a href="/giftlist" title="wishlist" class="btn btn-default btn-orders">
-                                        <img src="/arquivos/CORACAO2.png" style="max-width: 18px"/>
-                                    </a>
-                            </li>
+                          
 
                             <li id="usuario-cart">
                                     <div class="mini-cart col-mini-cart">
                                             <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default btn-block btn-mini-cart">
-                                               <img src="/arquivos/BAG2.png" style="max-width: 20px;" />
+                                               <img src="/arquivos/cartnome.png" style="max-height: 50px;" />
                                             </a>
                                             <div id="mini-cart-admake-aux" class="hidden">
                                                 <vtex.cmc:miniCart />
@@ -134,15 +119,19 @@
              
  
              </div><!-- .row -->
-             <div class="row" style="width: 795px;margin-left: 17%;">
-                <div class="deptos col-xs-12 col-sm-5 col-md-4 col-lg-12 hidden-xs hidden-sm">
-                    <ul></ul>
-                  <!--<vtex.cmc:departmentNavigator/>--> 
-               </div><!-- .search -->
-             </div>
+             
          </div><!-- .container -->
      </div><!-- .header -->
- 
+ <div class="depto-nav-area">
+     <div class="container">
+        <div class="row">
+            <div class="deptos col-xs-12 col-sm-5 col-md-4 col-lg-12 hidden-xs hidden-sm">
+                <ul></ul>
+              <!--<vtex.cmc:departmentNavigator/>--> 
+           </div><!-- .search -->
+         </div>
+     </div>
+ </div>
  </header><!-- .header-container -->
  
  <div id="extra-header-bottom"></div>
