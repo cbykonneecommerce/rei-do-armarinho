@@ -1,0 +1,154 @@
+.footer {
+    margin-top: 0px !important;
+    padding-top: 20px;
+    background-color: #C6A25E !important;
+}
+
+.footer ul li a {
+    color:#333 !important;
+}
+
+ #newsletter {
+    background-color: #390D0C !important;
+}
+
+.social-icons li {
+    margin-right: 21px
+}
+
+.social-icons li a img {
+    max-height: 14px;
+}
+
+.payments li a img {
+    max-width: 262px
+}
+
+.certificates li a img {
+    max-width: 100px
+}
+
+#footercbyk {
+    max-width: 45px;
+}
+
+#footervtex {
+    max-width: 74px;
+}
+
+#middle-footer {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+.footer-section ul li a {
+    font-size: 15px;
+    line-height: 25px;
+    color: #565656
+}
+
+.footer-title {
+    margin-bottom: 22px;
+    font-weight: bold;
+}
+
+#newsletterwrapper input {
+    height: 38px;
+    border-color: white;
+    font-size: 12px;
+    color: #444;
+    font-family: "Lato";
+    width: 50%;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-right: 2em;
+}
+
+#newsletterwrapper input::placeholder {
+    color: #444;
+}
+
+#newsletterwrapper input:focus {
+    background: #EAECED;
+}
+
+#emailcatcher {
+    color: white;
+    background-color: #931A29;
+    padding: 11px 41px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.spacedtitle, .prateleira.vitrine h2 {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+
+.spacedtitle::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 1px;
+    margin: 16px auto 0;
+    background: #000;
+}
+
+.prateleira.vitrine h2{ 
+    text-align: center;
+}
+
+.prateleira.vitrine h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 1px;
+    margin: 16px auto 0;
+    background: #000;
+}
+
+#makers {
+   text-align: right;
+}
+
+@media (min-width: 1200px) {
+    .smaller-row {
+        margin-left: 135px !important;
+        margin-right: 135px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #newsletterwrapper input {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #emailcatcher {
+        margin-left: 0;
+    }
+    .footer .smaller-row {
+        margin-top: 31px;
+    }
+    .footer-section {
+        margin-top: 29px;
+    }
+    .footer-title {
+        margin-bottom: 15px;
+    }
+    #middle-footer div ul li:first-child {
+        display: block;
+        margin-bottom: 18px;
+        margin-top: 28px;
+    }
+
+    #makers {
+        margin-top: 25px;
+    }
+}
