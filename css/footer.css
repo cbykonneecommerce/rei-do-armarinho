@@ -55,14 +55,15 @@
 #newsletterwrapper input {
     height: 38px;
     border-color: white;
-    font-size: 12px;
+    font-size: 16px;
     color: #444;
-    font-family: "Lato";
     width: 50%;
     outline: none;
     border-radius: 10px;
     padding-left: 10px;
     margin-right: 2em;
+    text-align: center;
+    font-weight: bold;;
 }
 
 #newsletterwrapper input::placeholder {
@@ -79,7 +80,10 @@
     padding: 11px 41px;
     text-decoration: none;
     border-radius: 10px;
+    font-weight: bold;
     margin-left: 10px;
+    font-size: large;
+}
 }
 
 .spacedtitle, .prateleira.vitrine h2 {
@@ -87,7 +91,6 @@
     line-height: 18px;
     font-weight: 400;
     letter-spacing: 5px;
-    font-family: 'Lato';
     text-transform: uppercase;
 }
 
