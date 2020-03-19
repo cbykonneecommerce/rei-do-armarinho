@@ -113,6 +113,7 @@
 
 .header .button-menu-xs .btn {
     outline: none;
+    margin-top: 10px;
 }
 
 .header .mini-cart .btn {
@@ -283,6 +284,10 @@
     border-radius: 0 !important;
 }
 
+
+.owl-controls .owl-buttons > div.owl-prev,.owl-controls .owl-buttons > div.owl-next {
+    max-width: 15px;
+}
 @media screen and (min-width: 1200px) {
     #headerrow {
         display: flex;
@@ -303,15 +308,17 @@
     .btn-buscar {
         max-width: 18px;
     }
+    .fulltext-search-box {
+        height: 2.5em;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .header .search {
         text-align: center;
-        margin-bottom: 19px;
     }
     .header .mini-cart, .header .button-menu-xs {
-        margin-top: 6%;
+        margin-top: 7%;
     }
     #menu-mobile .header-menu-mobile {
         margin-top: 8%;
@@ -321,4 +328,6 @@
         align-items: stretch;
         justify-content: space-between;
     }
+
+    
 }
