@@ -1,0 +1,161 @@
+
+.pages .pgCurrent {
+    background-color: black !important;
+}
+
+.resultado-busca-filtro .compare {
+    display: none;
+}
+
+.title-category {
+    margin-top: 43px;
+    border-bottom: none !important
+}
+.titulo-sessao {
+    font-size: 30px !important;
+    color: #390D0C !important;
+}
+
+.bread-crumb {
+    margin-top: 35px;
+}
+
+.depto-text p {
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+
+.box-banner a img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.cardorder ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+
+.cardorder ul a:hover::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: 16px auto 0;
+    background: #931A29;
+}
+
+.cardorder ul li a {
+    text-decoration: none;
+    color: #828282;
+    font-weight: bold;
+}
+.pages li.pgEmpty {
+    background-color: transparent;
+    color: black;
+
+}
+
+.pages li {
+    border: none !important;
+    background-color: transparent;
+}
+
+.resultado-busca-filtro > fieldset select {
+    border: 1px solid white !important;
+    border-radius: 0 !important;
+    color: black !important;
+}
+
+#admake-advanced-filter {
+    background-color: transparent !important;
+    border: none !important;
+    margin-bottom: 0.5em;
+}
+#admake-advanced-filter > h2  {
+    display: none;
+}
+
+.resultado-busca-filtro {
+    /*background-color: #FCFCFC;*/
+    margin-top: 1em;
+}
+
+.carregar-prox-pg {
+    padding: 18px;
+    border: solid 2px;
+    display: inline-block;
+    border-radius: 9px;
+    font-size: 20px;
+    color: #931A29;
+    text-align: center;
+    width: 362px;
+    font-weight: 700;
+    margin-top: 3em;
+}
+
+
+@media screen and (max-width: 1900px) {
+    .box-banner a img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .resultado-busca-filtro > fieldset.filterby {
+        display: none;
+    }
+
+    .prateleira.vitrine > ul > li {
+        width: 50% !important;
+    }
+
+    .pager.bottom {
+        margin-top:100px
+    }
+    #mySidenav {
+        z-index: 9999999999;
+        top: 0;
+        left: -880px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-top: 20px;
+        height: 100%;
+        position: fixed;
+        width: 64%;
+        transition: 0.5s;
+        padding-top: 60px;
+        background-color: white;
+    }
+
+    #departament-navegador #admake-advanced-filter {
+        display: block !important;
+    }
+
+    .sub-titulo h3 .caret {
+        float: right;
+    margin-top: 10px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    #sidenavCTR {
+        display: none;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+    #admake-advanced-filter > .box-filtro {
+        display: inline-grid;
+        background-color: white;
+        min-width: 150px;
+        border-bottom: none !important;
+    }
+}

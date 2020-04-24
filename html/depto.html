@@ -1,0 +1,148 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+     <title>Departamento</title>
+     <vtex:metaTags/>
+ 
+     <link href="/arquivos/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+     <link href="/arquivos/ion.rangeSlider.skinHTML5.css" rel="stylesheet" type="text/css" />
+     <script src="/arquivos/ion.rangeSlider.min.js"></script>
+ 
+     <vtex:template id="commonStyles" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="/arquivos/depto.css" rel="stylesheet" type="text/css" />
+ </head>
+ 
+ <body id="departament-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="Header" />
+         <!-- /SubTemplate: Header -->
+                     
+         <div id="departament-extra-top"></div>
+
+         <div class="container">
+            <div class="title-category">
+                <!--  Controle: Titulo -->
+                <vtex.cmc:searchTitle />
+                <!-- /Controle: Titulo -->
+            </div><!-- .title-category -->
+            <div id="departament-banner">
+                    <!--  placeholder -->
+                    <vtex:contentPlaceHolder id="Banner-Principal" />
+                    <!-- /placeholder -->
+                </div><!-- #departament-banner -->
+
+                <div class="cardorder">
+                    <vtex.cmc:shelforder />
+                </div>
+     </div>
+
+     <div id="sidenavCTR" style="position: fixed;top: 50%;z-index: 99;background: #b3b3b3;
+     opacity: .8;">
+         <a  onclick="openNav()" id="open"><img src="/arquivos/seta02.png"/></a>
+         <a  onclick="closeNav()" id="close"><img src="/arquivos/seta01.png"/></a>
+     </div>
+ 
+         <section id="content" class="container">
+ 
+                     
+             <div id="departament-extra-middle"></div>
+ 
+             <div class="row">
+ 
+                 <aside class="col-xs-3 sidebar"  id="mySidenav">
+                     <div id="departament-navegador">
+                         <!--  Controle: navegador de departamento -->
+                         <vtex.cmc:singleDepartmentNavigator keepCurrentPath="true" />
+                         <!-- /Controle: navegador de departamento -->
+                     
+                         <div id="departament-extra-menu"></div>
+                     </div><!-- #departament-navegador -->          	
+                 </aside><!-- .sidebar -->
+        
+                 <article id="main-content" class="col-xs-12 col-md-9">
+                                                                     
+                     
+                   
+                         
+                     <div id="collections">
+                         
+                         <div class="collection-wrap">
+                             <vtex.cmc:searchResult layout="ef3fcb99-de72-4251-aa57-71fe5b6e149f" itemCount="12"     columnCount="4" />
+                         </div>
+                         
+ 
+                         <div class="showcase-default">
+                             <vtex:contentPlaceHolder id="Destaques" />
+                         </div>
+                         
+                         <div class="showcase-default">
+                             <vtex:contentPlaceHolder id="Lançamentos" />   
+                         </div>
+ 
+                     </div><!-- #collections -->
+                 
+                 </article><!-- #main-content -->
+ 
+             </div><!-- .row -->
+         
+         </section><!-- #content -->
+                     
+         <div id="departament-extra-bottom"></div>
+ 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="Footer" />
+         <!-- /SubTemplate: Footer -->
+     
+     </div><!-- .container-fluid -->
+ 
+ </body>
+     <vtex:template id="commonScripts" />
+     <script src="/arquivos/pagination.js"></script>
+     <script src="/arquivos/filters.js"></script>
+     <script>
+
+            $("#sidenavCTR #close").hide();
+   
+            function openNav() {
+                document.getElementById("mySidenav").style.left = "0px";
+                document.getElementById("sidenavCTR").style.left = "64%";
+                $("#sidenavCTR #open").hide();
+                $("#sidenavCTR #close").show();
+            }
+   
+            function closeNav() {
+                document.getElementById("mySidenav").style.left = "-880px";
+                document.getElementById("sidenavCTR").style.left = "0%";
+                $("#sidenavCTR #close").hide();
+                $("#sidenavCTR #open").show();
+            }
+        </script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/arquivos/infinityScroll.css" />
+<script type="text/javascript" src="/arquivos/QD-Infinity-Scroll.js"></script>
+<script>
+    $(".prateleira[id*=ResultItems]").QD_infinityScroll();
+
+    setTimeout(function(){
+
+       $(".prateleira .buy-button-qtd .btn-add-buy-button-asynchronous").prepend('<img src="/arquivos/btncart.png"  style=""/>');
+       $(".sidebar").append($("#admake-advanced-filter"));
+    }, 1000)
+    </script>
+ </html>
