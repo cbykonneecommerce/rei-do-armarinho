@@ -67,7 +67,10 @@ $(".dropdown-btn#especificacao").toggle(() => {
     $(".dropdown-btn#especificacao i").attr('class', 'fa fa-plus');
 })
 
-
+$(".product-sku-selector-btn").click(()=>{
+    $(".product-resume").hide();
+   $(".selector-sector").fadeIn();
+})
 
 
 

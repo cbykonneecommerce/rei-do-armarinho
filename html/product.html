@@ -39,88 +39,115 @@
              <div id="product-extra-middle"></div>  
  
              <div class="row product-details">
- 
-                <div class="product-info col-xs-12 col-sm-5 col-lg-6">
-                    <div class="row">
-                        <div class="codigo-produto col-xs-12 col-lg-6">
-                            <span>Cód:</span> <vtex.cmc:skuReference/>
+                <div class="product-resume">
+                    <div class="product-info col-xs-12 col-sm-5 col-lg-6">
+                        <div class="row">
+                            <div class="codigo-produto col-xs-12 col-lg-6">
+                                <span>Cód:</span> <vtex.cmc:skuReference/>
+                            </div>
+                            
                         </div>
+     
+                        <div class="product-name ">
+                            <h1>
+                                <vtex.cmc:productName />
+                            </h1>
+                        </div>
+                        <div id="yv-review-quickreview"></div>
+    
                         
-                    </div>
- 
-                    <div class="product-name ">
-                        <h1>
-                            <vtex.cmc:productName />
-                        </h1>
-                    </div>
-                    <div id="yv-review-quickreview"></div>
-
+    
+                        <div class="price-box">
+                            <!--  Component: Sellers -->
+                            <vtex.cmc:SellerOptions />
                     
-
-                    <div class="price-box">
-                        <!--  Component: Sellers -->
-                        <vtex.cmc:SellerOptions />
+                            <!--  Component: Price -->
+                            <vtex.cmc:skuPrice />
+                        
+                            <!--  Component: Sales channels -->
+                            <vtex.cmc:SalesChannelDropList />
+                        
+                            <!--  Component: Addicional services -->
+                            <vtex.cmc:stockKeepingUnitService />
+                            
+                            <!--  Component: Payment methods -->
+                            <!-- <vtex.cmc:OtherPaymentMethod/> -->
+                        </div><!-- .price-box -->
+    
+                        <div class="product-description-inside">
+                            <div id="description-inside">
+                                <!--  Component: Description -->
+                                <vtex.cmc:ProductDescription />
+                            </div><!-- .description -->
+                        </div>
+    
+                        <span class="product-sku-selector-btn" >CLIQUE AQUI PARA DEFINIR CORES E QUANTIDADES</span>
+    
+                        
+    
+                       
+                        <div class="row">
+                         
+                        </div>
+                       
+                       <!-- <div class="col-xs-12 col-lg-6" style="margin-bottom: 2em;">
+                           <div class="avaliacoes"><a href="#reviews" class="link-ancora"><vtex.cmc:evaluationRate/></a></div>
+                       </div>-->
+                       
+                        
+                        <div id="product-extra-details-1"></div>  
+    
+                        
+    
+                        <div id="product-extra-details-2"></div>  
+    
+                    </div><!-- .product-info -->
+     
+                     <div class="product-image col-xs-12 col-sm-7 col-lg-6 text-center">
+                         <!--  Component: Product Images -->
+                         <vtex.cmc:ProductImage zoom="on"/>
+     
+                       <!--<vtex.cmc:facebookLike />-->  
+                     </div><!-- .product-image -->
+                </div>
                 
-                        <!--  Component: Price -->
-                        <vtex.cmc:skuPrice />
-                    
-                        <!--  Component: Sales channels -->
-                        <vtex.cmc:SalesChannelDropList />
-                    
-                        <!--  Component: Addicional services -->
-                        <vtex.cmc:stockKeepingUnitService />
-                        
-                        <!--  Component: Payment methods -->
-                        <!-- <vtex.cmc:OtherPaymentMethod/> -->
-                    </div><!-- .price-box -->
-
-                    <div class="product-description-inside">
-                        <div id="description-inside">
-                            <!--  Component: Description -->
-                            <vtex.cmc:ProductDescription />
-                        </div><!-- .description -->
-                    </div>
-
-                    <span class="product-sku-selector-btn" >CLIQUE AQUI PARA DEFINIR CORES E QUANTIDADES</span>
-
-                    <div class="seletor-sku">
-                        <vtex.cmc:stockKeepingUnitSelection />
-                    </div><!-- .seletor-sku -->
+                 <div class="selector-sector">
                     <div class="row">
-                       <div class="buy-button-box hidden-xs col-sm-6">
-                           <vtex.cmc:BuyButton />
-                       </div><!-- .buy-button-box -->
-                       <div class="shipping-box col-sm-6">
-                          <vtex.cmc:shippingValue />
-                          <script type="text/javascript">
-                              $(document).ready( function(){
-                                  ShippingValue();
-                              });
-                          </script>
-                      </div>
+                        <div class="col-sm-6">
+                            <div class="seletor-sku">
+                                <vtex.cmc:stockKeepingUnitSelection />
+                            </div><!-- .seletor-sku -->
+                        </div>
+
+
+                        <div class="col-sm-6">
+                            <div class="product-name ">
+                                <h1>
+                                    <vtex.cmc:productName />
+                                </h1>
+                            </div>
+
+                            <div class="product-image text-center">
+                                <!--  Component: Product Images -->
+                                <vtex.cmc:ProductImage />
+            
+                              <!--<vtex.cmc:facebookLike />-->  
+                            </div>
+
+                            <div class="buy-button-box">
+                                <vtex.cmc:BuyButton />
+                            </div><!-- .buy-button-box -->
+                            <div class="shipping-box col-sm-6">
+                               <vtex.cmc:shippingValue />
+                               <script type="text/javascript">
+                                   $(document).ready( function(){
+                                       ShippingValue();
+                                   });
+                               </script>
+                           </div>
+                        </div>
                     </div>
-                   
-                   <!-- <div class="col-xs-12 col-lg-6" style="margin-bottom: 2em;">
-                       <div class="avaliacoes"><a href="#reviews" class="link-ancora"><vtex.cmc:evaluationRate/></a></div>
-                   </div>-->
-                   
-                    
-                    <div id="product-extra-details-1"></div>  
-
-                    
-
-                    <div id="product-extra-details-2"></div>  
-
-                </div><!-- .product-info -->
- 
-                 <div class="product-image col-xs-12 col-sm-7 col-lg-6 text-center">
-                     <!--  Component: Product Images -->
-                     <vtex.cmc:ProductImage zoom="on"/>
- 
-                   <!--<vtex.cmc:facebookLike />-->  
-                 </div><!-- .product-image -->
- 
-                 
+                </div>
  
              </div><!-- .product-details -->
                      
