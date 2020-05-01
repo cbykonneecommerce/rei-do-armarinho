@@ -84,6 +84,7 @@
                         <span class="product-sku-selector-btn" >CLIQUE AQUI PARA DEFINIR CORES E QUANTIDADES</span>
     
                         
+                       
     
                        
                         <div class="row">
@@ -129,14 +130,18 @@
 
                             <div class="product-image text-center">
                                 <!--  Component: Product Images -->
-                                <vtex.cmc:ProductImage />
+                                <vtex.cmc:ProductImage  zoom="off" />
             
                               <!--<vtex.cmc:facebookLike />-->  
                             </div>
 
                             <div class="buy-button-box">
-                                <vtex.cmc:BuyButton />
+
+                                    <h5>Quantidade:</h5>
+                       
+                               <vtex.cmc:BuyButton />
                             </div><!-- .buy-button-box -->
+                            
                             <div class="shipping-box col-sm-6">
                                <vtex.cmc:shippingValue />
                                <script type="text/javascript">
@@ -229,7 +234,7 @@
  
                  <div class="product-description-box">
                      <div id="reviews" class="rating">
-                         <vtex.cmc:UserReview/>
+                        <div id="yv-reviews"></div>
                      </div>
                  </div>
 
@@ -262,26 +267,7 @@
          <vtex:template id="Footer" />
          <!-- /SubTemplate: Footer -->
  
-         <div id="comprar-flutuante" style="display: none;" class="visible-xs">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-xs-1 visible-lg visible-md">
-                         <img src="/arquivos/sem-foto.gif" alt="" id="foto-comprar-flutuante" class="img-responsive" />
-                     </div>
-                     <div class="col-nome col-xs-3 hidden-xs">
-                         <vtex.cmc:productName/>
-                     </div>
-                     <div class="col-precos col-xs-4 col-lg-5 hidden-xs">
-                         <vtex.cmc:skuPrice/>
-                     </div>
-                     <div class="col-comprar col-xs-12 col-sm-5 col-md-4 col-lg-3">
-                         <div class="buy-button-box">
-                             <vtex.cmc:BuyButton />
-                         </div><!-- .buy-button-box -->
-                     </div>
-                 </div>
-             </div>
-         </div>
+         
      
      </div><!-- .container-fluid -->
  

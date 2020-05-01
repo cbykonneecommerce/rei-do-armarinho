@@ -2,55 +2,67 @@
 
 $(document).ready(function() {
  
-    
-$("#carouselpropostas").owlCarousel({
- 
-    autoPlay: 3000, //Set AutoPlay to 3 seconds
+  $('.fullbanner').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        dots: true,
+      }
+    }]
 
-    items : 1,
-    itemsDesktop : [1199,6],
-    itemsDesktopSmall : [979,1],
-    itemsMobile : [479,1],
-    navigation: false,
-    stopOnHover: true,
-    pagination: false
-
-});
-
-$("#carouseldeptos").owlCarousel({
- 
-  autoPlay: 3500, //Set AutoPlay to 3 seconds
-
-  items : 1,
-  itemsDesktopSmall : [979,1],
-  itemsMobile : [479,1],
-  navigation: true,
-  stopOnHover: true,
-  pagination: false
-
-});
-
-$("#carouselmarcas").owlCarousel({
- 
-  autoPlay: 3500, //Set AutoPlay to 3 seconds
-
-  items : 5,
-  itemsDesktopSmall : [979,5],
-  itemsMobile : [479,2],
-  navigation: true,
-  stopOnHover: true,
-  pagination: false
-
-});
+  });
 
 
+  $('#carouselpropostas').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false
+  });
 
+  $('#carouseldeptos').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true
+  });
 
+  
+  $('#carouselmarcas').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+    responsive: [
+     
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false
+        }
+      }
+    ]
+  });
 
+  
+  
 
-
-$(".owl-prev").html("<img src='/arquivos/seta-esquerda.png' />");
-$(".owl-next").html("<img src='/arquivos/seta-direita.png' />");
+$(".slick-prev.slick-arrow").html("<img src='/arquivos/seta-esquerda.png' />");
+$(".slick-next.slick-arrow").html("<img src='/arquivos/seta-direita.png' />");
    
   });
 

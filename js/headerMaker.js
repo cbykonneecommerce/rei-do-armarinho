@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+//$( document ).ready(function() {
 
 
     fetch("/api/catalog_system/pub/category/tree/3/")
@@ -98,4 +98,4 @@ $( document ).ready(function() {
     
 
 
-});
+//});

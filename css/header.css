@@ -285,8 +285,22 @@
 }
 
 
-.owl-controls .owl-buttons > div.owl-prev,.owl-controls .owl-buttons > div.owl-next {
-    max-width: 15px;
+.slick-prev, .slick-next {
+    z-index: 2;
+
+}
+.slick-prev{
+    left: 24px !important;
+
+}
+
+.slick-next {
+    right: 24px !important;
+
+}
+.slick-prev::before, .slick-next::before {
+    content:"" !important;
+    
 }
 @media screen and (min-width: 1200px) {
     #headerrow {
