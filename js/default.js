@@ -65,11 +65,11 @@
 			$recebeQtyForm.prepend(
                 '<div class="pull-left box-qtd">' +
                 '	<div class="bts">' +
-				'		<button class="btn btn-menos"><img src="/arquivos/menos.png" alt="" style="width: 30px;"/></button>' +
+				'		<button class="btn btn-menos"><img src="/arquivos/menos.png" alt="" style="width: 35px;"/></button>' +
 				' 	</div>' +
 				'	<input type="text" class="qtd" value="1" />' +
 				'	<div class="bts">' +
-				'		<button class="btn btn-mais"><img src="/arquivos/mais.png" alt="" style="width: 30px;"/></button>' +
+				'		<button class="btn btn-mais"><img src="/arquivos/mais.png" alt="" style="width: 35px;"/></button>' +
 				' 	</div>' +
 				'</div>'
 			);

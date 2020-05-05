@@ -16,6 +16,7 @@
      <vtex:template id="commonStyles" />
      
     <link href="/arquivos/product.css" rel="stylesheet" type="text/css" />
+    <link href="/arquivos/colorVariation.css" rel="stylesheet" type="text/css" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  
  </head>
@@ -45,6 +46,10 @@
                             <div class="codigo-produto col-xs-12 col-lg-6">
                                 <span>Cód:</span> <vtex.cmc:skuReference/>
                             </div>
+                            <div class="visible-xs" style="float:right">
+                                <div id="yv-review-quickreview"></div>
+                            </div>
+                            
                             
                         </div>
      
@@ -53,7 +58,14 @@
                                 <vtex.cmc:productName />
                             </h1>
                         </div>
-                        <div id="yv-review-quickreview"></div>
+
+                        <div class="product-image col-xs-12 col-sm-7 col-lg-6 text-center visible-xs">
+                            <!--  Component: Product Images -->
+                            <vtex.cmc:ProductImage zoom="on"/>
+        
+                          <!--<vtex.cmc:facebookLike />-->  
+                        </div><!-- .product-image -->
+                        <div class="hidden-xs" id="yv-review-quickreview"></div>
     
                         
     
@@ -104,7 +116,7 @@
     
                     </div><!-- .product-info -->
      
-                     <div class="product-image col-xs-12 col-sm-7 col-lg-6 text-center">
+                     <div class="product-image col-xs-12 col-sm-7 col-lg-6 text-center hidden-xs">
                          <!--  Component: Product Images -->
                          <vtex.cmc:ProductImage zoom="on"/>
      
@@ -137,11 +149,11 @@
 
                             <div class="buy-button-box">
 
-                                    <h5>Quantidade:</h5>
+                                 <!--<h5>Quantidade:</h5>-->  
                        
                                <vtex.cmc:BuyButton />
                             </div><!-- .buy-button-box -->
-                            
+
                             <div class="shipping-box col-sm-6">
                                <vtex.cmc:shippingValue />
                                <script type="text/javascript">
