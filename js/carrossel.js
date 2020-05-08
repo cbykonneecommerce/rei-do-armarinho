@@ -1,6 +1,8 @@
 
 
 $(document).ready(function() {
+
+  $(".helperComplement").remove();
  
   $('.fullbanner').slick({
     infinite: true,
@@ -21,6 +23,29 @@ $(document).ready(function() {
   });
 
 
+
+
+  $('.product-carousel .prateleira.vitrine ul').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false
+      }
+    }]
+
+  });
+
+
+  
   $('#carouselpropostas').slick({
     infinite: true,
     slidesToShow: 2,

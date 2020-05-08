@@ -302,6 +302,10 @@
     content:"" !important;
     
 }
+
+#box-bread-brumb {
+    padding: 10px 0 15px !important;
+}
 @media screen and (min-width: 1200px) {
     #headerrow {
         display: flex;

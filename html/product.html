@@ -24,6 +24,7 @@
  <body id="product-page">
  
      <div class="page">
+        <div id="overlay"></div>
  
          <!--  SubTemplate: Header -->
          <vtex:template id="Header" />
@@ -43,11 +44,11 @@
                 <div class="product-resume">
                     <div class="product-info col-xs-12 col-sm-5 col-lg-6">
                         <div class="row">
-                            <div class="codigo-produto col-xs-12 col-lg-6">
+                            <div class="codigo-produto col-xs-6 col-lg-6">
                                 <span>Cód:</span> <vtex.cmc:skuReference/>
                             </div>
-                            <div class="visible-xs" style="float:right">
-                                <div id="yv-review-quickreview"></div>
+                            <div class="visible-xs" style="float:right;margin-top: -24px;">
+                              <!--<div id="yv-review-quickreview"></div>-->  
                             </div>
                             
                             
@@ -65,7 +66,7 @@
         
                           <!--<vtex.cmc:facebookLike />-->  
                         </div><!-- .product-image -->
-                        <div class="hidden-xs" id="yv-review-quickreview"></div>
+                        <div class="" id="yv-review-quickreview"></div>
     
                         
     
@@ -95,7 +96,23 @@
     
                         <span class="product-sku-selector-btn" >CLIQUE AQUI PARA DEFINIR CORES E QUANTIDADES</span>
     
-                        
+                        <div id="only-one-sku-sector">
+                            <div class="buy-button-box">
+
+                                <!--<h5>Quantidade:</h5>-->  
+                      
+                              <vtex.cmc:BuyButton />
+                           </div><!-- .buy-button-box -->
+
+                           <div class="shipping-box col-sm-12">
+                              <vtex.cmc:shippingValue />
+                              <script type="text/javascript">
+                                  $(document).ready( function(){
+                                      ShippingValue();
+                                  });
+                              </script>
+                          </div>
+                        </div>
                        
     
                        
@@ -134,6 +151,8 @@
 
 
                         <div class="col-sm-6">
+
+                            <span id="selector-closer"><img src="/arquivos/close-btn.png" alt="" style="max-width:50px"/></span>
                             <div class="product-name ">
                                 <h1>
                                     <vtex.cmc:productName />
@@ -154,7 +173,7 @@
                                <vtex.cmc:BuyButton />
                             </div><!-- .buy-button-box -->
 
-                            <div class="shipping-box col-sm-6">
+                            <div class="shipping-box col-sm-12">
                                <vtex.cmc:shippingValue />
                                <script type="text/javascript">
                                    $(document).ready( function(){
@@ -172,9 +191,9 @@
                      
              <div class="product-description">
                  
-                 <div class="btn-group desk-info-nav hidden-xs" role="group" aria-label="menu-anchor">
-                       <a id="first" href="#description" class="btn btn-default">DESCRIÇÃO</a>
-                       <a id="last" href="#specification" class="btn btn-default">ESPECIFICAÇÃO</a>
+                 <div class="btn-group desk-info-nav" role="group" aria-label="menu-anchor">
+                       <a id="first"  class="btn btn-default">DESCRIÇÃO</a>
+                       <a id="last"  class="btn btn-default">ESPECIFICAÇÃO</a>
                  </div>
  
  
@@ -184,46 +203,9 @@
  
                  <div id="product-extra-description-2"></div>  
                  
-                 <div class="mobile-infos visible-xs">
-                    <div class="row">
-                        <div class="dropbuttom col-xs-12">
-                            <button class="dropdown-btn btn" id="descricao">DESCRIÇÃO
-                                <i class="fa fa-plus"></i>
-                            </button>
-                            <div class="dropdown-container" id="descricao">
-                                <div class="product-description-box">
-                                    <div id="description">
-                                        <!--  Component: Description -->
-                                        <vtex.cmc:ProductDescription />
-                                    </div><!-- .description -->
-                                </div>
-                            </div>
-    
-    
-                        </div>
-                    </div>
-    
-    
-                    <div class="row">
-                        <div class="dropbuttom col-xs-12">
-                            <button class="dropdown-btn btn" id="especificacao">CARACTERÍSTICAS
-                                <i class="fa fa-plus"></i>
-                            </button>
-                            <div class="dropdown-container" id="especificacao">
-                                <div class="product-description-box">
-                                    <div id="specification">
-                                        <!--  Component: Specification -->
-                                        <vtex.cmc:productSpecification />
-                                    </div><!-- .description -->
-                                </div>
-                            </div>
-    
-    
-                        </div>
-                    </div>
-                 </div>
+                
 
-                 <div class="hidden-xs">
+                 <div class="">
                     <div class="product-description-box">
                         <div id="description">
                             <h2 class="title"></h2>
@@ -258,7 +240,7 @@
                  <div id="product-extra-description-5"></div>  
  
                  <div class="product-description-box">
-                     <div class="showcase-default showcase-owl">
+                     <div class="product-carousel">
                          <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
                      </div><!-- .showcase-default -->
                  </div>

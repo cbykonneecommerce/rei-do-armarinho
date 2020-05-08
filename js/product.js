@@ -8,6 +8,33 @@ $(".sku-notifyme-form p").text("Avise-me quando estiver disponível");
 
 
 
+function BatchBuy_OnSkuDataReceived(e) {
+    var id = e.skuData.id;
+    selectedToBuy = [];
+    if (id > 0) {
+        console.log(e.skuData);
+        if(!e.skuData.availability) {
+            $(".buy-button-box .box-qtd").hide()
+        } else {
+            $(".buy-button-box .box-qtd").show()
+        }
+    }
+}
+
+
+function IsOnlyOneSKU() {
+    if(skuJson.skus.length == 1) {
+        $(".product-sku-selector-btn").hide();
+        $("#only-one-sku-sector").show();
+    }
+}
+
+
+
+IsOnlyOneSKU();
+var batchBuyListener = new Vtex.JSEvents.Listener('batchBuyListener', BatchBuy_OnSkuDataReceived);
+skuEventDispatcher.addListener(skuDataReceivedEventName, batchBuyListener);
+
 setTimeout(function () {
     const price = skuJson.skus[0].bestPrice;
     if( price < 10000) {
@@ -40,7 +67,7 @@ $(".desk-info-nav a").click((e)=>{
 
 })
 
-
+/*
 $(".dropdown-container").hide();
 $(".dropdown-btn#descricao").toggle(() => {
 
@@ -59,11 +86,19 @@ $(".dropdown-btn#especificacao").toggle(() => {
     $(".dropdown-container#especificacao").slideUp()
     $(".dropdown-btn#especificacao i").attr('class', 'fa fa-plus');
 })
-
+*/
 $(".product-sku-selector-btn").click(()=>{
     $(".product-resume").hide();
    $(".selector-sector").fadeIn();
 })
+
+$("#selector-closer").click(()=>{
+    $(".product-resume").fadeIn();
+   $(".selector-sector").hide();
+})
+
+
+
 
 
 

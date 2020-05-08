@@ -6,6 +6,20 @@
     text-align: center;
 }
 
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99999999999999;
+    cursor: pointer;
+}
+
 .notifymetitle.notifyme-title {
     color: #C52828;
     font-size: 25px;
@@ -13,7 +27,7 @@
 }
 
 .sku-notifyme-form.notifyme-form input {
-    background-color: #EAECED;
+    background-color: white;
     height: 38px;
     border-radius: 0px;
     border-color: white;
@@ -23,7 +37,11 @@
     display: block;
     outline: none;
     width: 100%;
+    border: solid 2px #931A29 !important;
+    border-radius: 15px !important;
     margin-top: 10px;
+    font-family: inherit;
+    padding-left: 2em;
 }
 
 .sku-notifyme-form.notifyme-form input.btn-ok {
@@ -234,9 +252,13 @@
     margin-top: 6%;
 }
 
+.product-info .shipping-box .freight-btn {
+    margin-top: -4px;
+}
+
 .product-info .shipping-box label {
     text-transform: uppercase;
-    color: #8D7573!important;
+    color: #333!important;
     text-decoration: underline;
 }
 
@@ -387,12 +409,20 @@ label.combination_unavaliable:after {
     line-height: 17px;
 }
 
-.selector-sector .shipping-box .freight-btn {
+.selector-sector .shipping-box ,.product-info .shipping-box .freight-btn {
     color: white !important;
-    background: #8D7573!important;
-    border: 1px solid #8D7573!important;
-    border-radius: 0px !important;
+    /* background: #8D7573!important; */
+    /* border: 1px solid #8D7573!important; */
+    /* border-radius: 0px !important; */
     margin-top: -4px;
+    /* color: white !important; */
+    /* display: block; */
+    text-transform: uppercase;
+    -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 4px 0px;
+    background-color: #931A29 !important;
+    font-weight: bold !important;
 }
 
 .waterdropTitle .line {
@@ -416,6 +446,17 @@ label.combination_unavaliable:after {
 
 .product-description .product-description-box .title {
     border-bottom: none !important;
+}
+
+#selector-closer {
+    position: absolute;
+    right: -25px;
+    top: -33px;
+    z-index: 999;
+}
+
+#only-one-sku-sector {
+    display: none;
 }
 
 
@@ -701,6 +742,44 @@ label.item_unavaliable:after {
     margin: -6px 0 0 0 !important;
 }
 
+.yv-bootstrap .yv-btn-primary {
+    color: white !important;
+    display: block;
+    /* text-transform: uppercase; */
+    -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 4px 0px;
+    background: #931A29 !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    /* width: 64% !important; */
+    padding: 18px 10px;
+    text-decoration: none;
+    margin: 3em 0px;
+    text-align: center;
+    border-radius: 10px !important;
+    line-height: 25px;
+}
+
+
+.product-description .desk-info-nav {
+    border-bottom: solid 2px #808080;
+    width: 100%;
+}
+
+.product-description .desk-info-nav a:hover, .product-description .desk-info-nav a:active {
+color: #390D0C;
+
+}
+
+.product-description .desk-info-nav a:hover::after, .product-description .desk-info-nav a:active::after  {
+    content: '';
+    display: block;
+    height: 4px;
+    margin: 10px auto 0px;
+    background: #C6A25E;
+}
+
 @media screen and (min-width: 1100px) {
     .product-image .apresentacao {
         margin-left: 15%
@@ -716,6 +795,14 @@ label.item_unavaliable:after {
     }
     .product-sku-selector-btn {
         width: 100% !important;
+        margin: 2em 0px;
+    margin-bottom: 0em;
+    }
+
+    #selector-closer {
+        position: absolute;
+    right: -13px;
+    top: -107%;
     }
 
     #product-content {
@@ -751,6 +838,11 @@ label.item_unavaliable:after {
     
     .product-details .codigo-produto span, .product-details .codigo-produto div {
         display: inline;
+        font-size: 11px !important;
+    }
+
+    #yv-review-quickreview a, #yv-review-quickreview strong {
+        font-size: 10px;
     }
     .product-description-box #description, .product-description-box #specification {
         display: block;
