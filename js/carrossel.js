@@ -2,7 +2,10 @@
 
 $(document).ready(function() {
 
-  $(".helperComplement").remove();
+  //$(".helperComplement").remove();
+
+
+  $('.product-carousel .prateleira.vitrine ul').find('.helperComplement').remove();
  
   $('.fullbanner').slick({
     infinite: true,

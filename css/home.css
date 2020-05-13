@@ -35,8 +35,32 @@
     color: #390D0C;
 }
 
+#carouselmarcas img {
+    max-width:80%;
+    text-align:center
+    
+}
+
+.yv-testimonial .yv-title {
+    display: none;
+}
 
 
+.yv-testimonial .slick-slide div div:first-child {
+    background-color: #390D0C !important;
+    color: white !important;
+}
+
+.yv-img-circle {
+    background-color: white !important;
+}
+#triangle-down {
+    border-top: 10px solid #390D0C !important;
+}
+
+.bootstrap .secondary, .yv-bootstrap .secondary {
+    color: white !important;
+}
 
 @media screen and (max-width: 800px) {
     #sobre p, #sobre h3 {

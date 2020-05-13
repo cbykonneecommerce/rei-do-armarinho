@@ -14,9 +14,11 @@ function BatchBuy_OnSkuDataReceived(e) {
     if (id > 0) {
         console.log(e.skuData);
         if(!e.skuData.availability) {
-            $(".buy-button-box .box-qtd").hide()
+            $(".buy-button-box .box-qtd").hide();
+            $(".product-info .buy-button-box .box-qtd").hide()
         } else {
-            $(".buy-button-box .box-qtd").show()
+            $(".buy-button-box .box-qtd").show();
+            $(".product-info .buy-button-box .box-qtd").show()
         }
     }
 }

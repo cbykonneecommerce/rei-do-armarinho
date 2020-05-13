@@ -864,3 +864,31 @@ color: #390D0C;
     }
     
 }
+
+@media (min-width: 1200px) and (max-height: 650px) {
+    .product-details .product-image {
+        width: 37%;
+        margin-left: 7%;
+    }
+    
+
+    .product-details .seletor-sku .topic {
+        max-height: 465px;
+    }
+    
+}
+
+
+@media (min-width: 1200px) and (max-height: 770px) {
+    .product-details .product-image {
+        width: 73%;
+    margin-left: 18%
+    }
+
+    .product-details .seletor-sku .topic {
+        max-height: 465px;
+    }
+    
+}
+
+

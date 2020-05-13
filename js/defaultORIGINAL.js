@@ -26,7 +26,7 @@
 		$btnComprar.html('Comprar <i class="fa fa-lock"></i>');
 	}
 
-	var $btnComprarProduto = $('.buy-in-page-button');
+	var $btnComprarProduto = $('.buy-button.buy-button-ref');
 	if( $btnComprarProduto.length ){
 
 		if( $('#comprar-flutuante').length ){
@@ -86,19 +86,19 @@
 			    }
 			});
 			$(document).on('keyup' , '.buy-button-box .box-qtd .qtd', function(e){
-				$('.buy-button-box .buy-in-page-quantity').val( $(this).val() );
+				$('.buy-button-box .box-qtd .qtd').val( $(this).val() );
 			});
 			$(document).on('blur' , '.buy-button-box .box-qtd .qtd', function(e){
 				var $this = $(this);
 				if( $this.val() === '' || parseInt( $this.val() ) < 1 ){
-					$('.buy-button-box .buy-in-page-quantity').val(1);
+					$('.buy-button-box .box-qtd .qtd').val(1);
 				}else{
-					$('.buy-button-box .buy-in-page-quantity').val( $this.val() );
+					$('.buy-button-box .box-qtd .qtd').val( $this.val() );
 				}
 			});
 			$(document).on('click', '.buy-button-box .box-qtd .btn', function(){
 				var $this = $(this);
-				var $qtd  = $('.buy-button-box .buy-in-page-quantity');
+				var $qtd  = $('.buy-button-box .box-qtd .qtd');
 				var valor = parseInt( $qtd.val() );
 				if( $this.hasClass('btn-mais') ){
 					$qtd.val( valor + 1 );

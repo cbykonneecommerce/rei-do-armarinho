@@ -6,7 +6,7 @@
 
 .prateleira .box-item {
     background-color: white !important;
-    height: 27em;
+    height: 28.5em;
     position: relative;
 }
 
@@ -81,6 +81,7 @@ select, fieldset {
     color: #b3bbd1 !important;
     display: block;
     margin-top: 1em;
+    height: 28px;
 }
 
 .title-category {

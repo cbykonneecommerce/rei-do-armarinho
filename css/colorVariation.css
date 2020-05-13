@@ -14,7 +14,7 @@
 }
 
 
-.selector-sector .seletor-sku .select label.skuespec_02-preto {
+.selector-sector .seletor-sku .select label.skuespec_02-preto, .selector-sector .seletor-sku .select label.skuespec_39-preto{
   
     color: #fff!important;
     background-color: #000;
@@ -227,6 +227,10 @@
     background-color: #A0B626;
     border-color: #A0B626 !important;
 }
+
+
+
+
 
 
 
