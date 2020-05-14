@@ -81,6 +81,8 @@ if ("function" !== typeof (String.prototype.trim)) String.prototype.trim = funct
 					}
 				});
 				$public.currentPage++;
+
+				cardhandler();
 				})
 			},
 			// Esta função é quem controla onde o conteúdo será inserido. Ela recebe como parâmetro: O ùltimo bloco inserido e os dados da nova requisição AJAX

@@ -5,7 +5,7 @@
  //FUNCAO ACIMA PARA FILTRAR TEXTO DE HTML PURO
 $(".notifymetitle.notifyme-title").text("Produto indisponível");
 $(".sku-notifyme-form p").text("Avise-me quando estiver disponível");
-
+let canIShowSKUIMG = false
 
 
 function BatchBuy_OnSkuDataReceived(e) {
@@ -28,7 +28,8 @@ function IsOnlyOneSKU() {
     if(skuJson.skus.length == 1) {
         $(".product-sku-selector-btn").hide();
         $("#only-one-sku-sector").show();
-    }
+    } 
+    
 }
 
 
@@ -38,6 +39,19 @@ var batchBuyListener = new Vtex.JSEvents.Listener('batchBuyListener', BatchBuy_O
 skuEventDispatcher.addListener(skuDataReceivedEventName, batchBuyListener);
 
 setTimeout(function () {
+
+
+if( !(skuJson.skus.length == 1)) {
+    const imgsLength = $(".product-resume .product-image .apresentacao .thumbs li").length;
+    let imgProduct = $($(".product-resume .product-image .apresentacao .thumbs li a img")[imgsLength - 1]).attr("src");
+    imgProduct = imgProduct.replace(/-70-70/g, '-500-500');
+
+    $(".product-image .zoomPad #image-main").attr("src",imgProduct);
+    $(".product-image .zoomWrapperImage img").attr("src",imgProduct)
+}
+
+
+
     const price = skuJson.skus[0].bestPrice;
     if( price < 10000) {
         $(".valor-dividido").hide();
@@ -53,6 +67,9 @@ setTimeout(function () {
         $(".product-description-box #description").fadeIn()
       })
       $(".product-details .seletor-sku .specification").text("Selecione uma cor")
+
+
+      
 }, 500);
 
 

@@ -1,11 +1,6 @@
-/*
- *
- * Desenvolvido por Integrando.se
- * hello@integrando.se
- * 
- * Bootstrap v.3
- *
- */
+function param(name) {
+    return ($('.buy-button.buy-button-ref').attr('href').split(name + '=')[1] || '').split('&')[0];
+}
  
 ;$(document).ready( function(){
 	
@@ -26,7 +21,7 @@
 		$btnComprar.html('Comprar <i class="fa fa-lock"></i>');
 	}
 
-	var $btnComprarProduto = $('.buy-in-page-button');
+	var $btnComprarProduto = $('.buy-button.buy-button-ref');
 	if( $btnComprarProduto.length ){
 
 		if( $('#comprar-flutuante').length ){
@@ -52,12 +47,32 @@
 
 		$btnComprarProduto.html('Comprar <i class="fa fa-lock"></i>');
 
-		$btnComprarProduto.click( function(){
+		$btnComprarProduto.click( function(e){
+			e.preventDefault();
+
 			var $this = $(this);
 			var url   = $this.attr('href');
 			if( url.indexOf('qty=1') > 0 ){
 				$this.attr('href', url.replace('qty=1', 'qty='+ parseInt( $('.buy-button-box .box-qtd .qtd').val() ) ) );
 			}
+
+			let item = {
+				id: parseInt(param("sku")),
+				quantity: parseInt($('.buy-button-box .box-qtd .qtd').val()),
+				seller: param("seller")
+			}
+			console.log(item)
+			if(item.id == NaN) {
+				alert("Selecione um SKU.")
+			} else {
+				vtexjs.checkout.addToCart([item])
+				.done(function(orderForm) {
+				  alert('Item adicionado!');
+				  console.log(orderForm);
+				});
+			}
+
+	
 		});
 
 		var $recebeQtyForm = $btnComprarProduto.parents('.buy-button-box');
@@ -86,19 +101,19 @@
 			    }
 			});
 			$(document).on('keyup' , '.buy-button-box .box-qtd .qtd', function(e){
-				$('.buy-button-box .buy-in-page-quantity').val( $(this).val() );
+				$('.buy-button-box .box-qtd .qtd').val( $(this).val() );
 			});
 			$(document).on('blur' , '.buy-button-box .box-qtd .qtd', function(e){
 				var $this = $(this);
 				if( $this.val() === '' || parseInt( $this.val() ) < 1 ){
-					$('.buy-button-box .buy-in-page-quantity').val(1);
+					$('.buy-button-box .box-qtd .qtd').val(1);
 				}else{
-					$('.buy-button-box .buy-in-page-quantity').val( $this.val() );
+					$('.buy-button-box .box-qtd .qtd').val( $this.val() );
 				}
 			});
 			$(document).on('click', '.buy-button-box .box-qtd .btn', function(){
 				var $this = $(this);
-				var $qtd  = $('.buy-button-box .buy-in-page-quantity');
+				var $qtd  = $('.buy-button-box .box-qtd .qtd');
 				var valor = parseInt( $qtd.val() );
 				if( $this.hasClass('btn-mais') ){
 					$qtd.val( valor + 1 );

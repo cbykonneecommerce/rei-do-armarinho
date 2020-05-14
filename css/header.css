@@ -267,6 +267,11 @@
     line-height: 18px !important;
 }
 
+#mini-cart-admake .mini-cart-itens {
+    overflow-y: auto;
+    max-height: 600px;
+}
+
 #mini-cart-admake #mini-cart-admake-total {
     color: #C6A25E !important
 }
@@ -359,7 +364,7 @@
     background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 26px;
+    padding-top: 55px;
     border-top: solid 15px #931A29
 }
 

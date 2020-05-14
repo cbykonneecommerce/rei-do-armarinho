@@ -11,7 +11,7 @@ function formatReal( int )
 
 setTimeout(()=>{
     $("#mini-cart-admake .mini-cart-item .detalhes").append(`
-    <button class="btn btn-menos" style="background-color: transparent;outline-style: none;
+    <button class="btn btn-menos-check" style="background-color: transparent;outline-style: none;
         box-shadow: none;"><img src="/arquivos/menos.png" alt="" style="width: 22px;"></button>
             <input type = "number" class="qtd-field" value = "1" style = "width: 50px;
             margin: 11px;
@@ -19,8 +19,13 @@ setTimeout(()=>{
             font-size: 18px !important;
             color: #333 !important;
             border: solid 2px #931A29 !important;"/>
-            <button class="btn btn-mais" style = "background-color: transparent;outline-style: none;
+            <button class="btn btn-mais-check" style = "background-color: transparent;outline-style: none;
         box-shadow: none;"><img src="/arquivos/mais.png" alt="" style="width: 22px;"></button>
+
+        <span class="product-remover"><img src="/arquivos/btn-remove.png"  style="width: 31px;
+        position: absolute;
+        top: -6px;
+        right: 37px;"/></span>
     `);
 
     $(".qtd-field").prop("disabled", true);
@@ -35,7 +40,7 @@ setTimeout(()=>{
  //formatReal(orderForm.value)
 });
 
-$(".btn-menos").on('click',  function(event) {
+$(".btn-menos-check").on('click',  function(event) {
     var rowindex = $(this).closest('.mini-cart-item').index();
     console.log('rowindex', rowindex);
     let me =  $(".qtd-field")[rowindex];
@@ -71,7 +76,7 @@ $(".btn-menos").on('click',  function(event) {
 
 
 
-$(".btn-mais").on('click',  function(event) {
+$(".btn-mais-check").on('click',  function(event) {
     var rowindex = $(this).closest('.mini-cart-item').index();
     console.log('rowindex', rowindex);
     let me =  $(".qtd-field")[rowindex];
@@ -102,5 +107,18 @@ $(".btn-mais").on('click',  function(event) {
   });
 
 });
+
+
+$(".product-remover").on('click', function(event){
+  var rowindex = $(this).closest('.mini-cart-item').index();
+  let itemsToRemove = [{"index": rowindex,
+  "quantity": 0}]
+  vtexjs.checkout.removeItems(itemsToRemove).then(res=>{
+    console.log("removido");
+    $($(".mini-cart-item")[rowindex]).fadeOut();
+    $($(".mini-cart-item")[rowindex]).remove();
+
+  });
+})
 
 },1000)

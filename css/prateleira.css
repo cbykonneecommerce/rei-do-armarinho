@@ -3,6 +3,10 @@
 }
 */
 
+.prateleira .product-image .manyvariations {
+    display: none;
+}
+
 
 .prateleira .box-item {
     background-color: white !important;
