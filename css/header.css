@@ -146,7 +146,7 @@
 }
 
 .deptos ul li a {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 16px;
     color: #fff;
     text-decoration: none;
@@ -155,24 +155,67 @@
 
 
 .deptonav {
-    background-color: #FCFCFC;
+    background-color: #FFF;
+    border-right: solid 10px #931A29;
     /*opacity: 0.92;*/
     z-index: 9999999999;
     padding-top: 2em;
     padding-left: 2em;
     position: absolute;
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 #deptos-list a {
-    color: black !important;
-    font-size: 10px;
+    color: #931A29!important;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#deptos-list a:hover {
+    color: #FFF !important;
+}
+
+#deptos-list a i {
+    color: #C6A25E;
+    font-size: 20px;
+    font-weight: 800;
+    padding-right: 10px;
+}
+
+#deptos-list a i:hover{
+    color: white !important;
+}
+
+
+.firstLayer, .secondLayer {
+    border-right: solid 5px #931A29;
+    height: 303px;
+    overflow-y: auto;
+    padding-right: 0px !important;
+
+}
+
+.thirdLayer {
+    height: 303px;
+    overflow-y: auto;
 }
 
 #deptos-list ul li {
-    line-height: 22px;
+    line-height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#deptos-list ul li:hover {
+    background-color: #931A29;
+}
+
+#deptos-list ul li:hover #deptos-list a, #deptos-list ul li:hover #deptos-list a i{
+    color: white !important;
 }
 
 .sidenav {
