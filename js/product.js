@@ -5,7 +5,16 @@
  //FUNCAO ACIMA PARA FILTRAR TEXTO DE HTML PURO
 $(".notifymetitle.notifyme-title").text("Produto indisponível");
 $(".sku-notifyme-form p").text("Avise-me quando estiver disponível");
-let canIShowSKUIMG = false
+let canIShowSKUIMG = false;
+
+//SE NAO TIVER VARIAÇÃO E NÃO TIVER ESTOQUE
+if(skuJson.skus.length <= 1 && !skuJson.available) {
+    $(".buy-button-box .box-qtd").hide();
+}
+
+
+
+
 
 
 function BatchBuy_OnSkuDataReceived(e) {

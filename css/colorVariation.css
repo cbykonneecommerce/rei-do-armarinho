@@ -14,14 +14,17 @@
 }
 
 
-.selector-sector .seletor-sku .select label.skuespec_02-preto, .selector-sector .seletor-sku .select label.skuespec_39-preto{
+.selector-sector .seletor-sku .select label.skuespec_02-preto, .selector-sector .seletor-sku .select label.skuespec_39-preto,
+ .selector-sector .seletor-sku .select label.skuespec_31-preto, .selector-sector .seletor-sku .select label.skuespec_520-preto,
+ .selector-sector .seletor-sku .select label.skuespec_304-preto{
   
     color: #fff!important;
     background-color: #000;
     border-color: #000!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_03-vermelho {
+.selector-sector .seletor-sku .select label.skuespec_03-vermelho, .selector-sector .seletor-sku .select label.skuespec_09-vermelho,
+.selector-sector .seletor-sku .select label.skuespec_309-vermelho, .selector-sector .seletor-sku .select label.skuespec_205-vermelho{
   
     color: white!important;
     background-color: red;
@@ -35,21 +38,57 @@
     border-color: #4169e1!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_06-laranja {
+
+
+.selector-sector .seletor-sku .select label.skuespec_202-azulclaro,.selector-sector .seletor-sku .select label.skuespec_221-ceuestrelado {
+   
+    color: #fff!important;
+    background-color: #D8E7F5;
+    border-color: #D8E7F5!important;
+}
+
+
+.selector-sector .seletor-sku .select label.skuespec_205-rosaclaro, .selector-sector .seletor-sku .select label.skuespec_222-pinkclaro,
+.selector-sector .seletor-sku .select label.skuespec_214-rose, .selector-sector .seletor-sku .select label.skuespec_910-rosaprimavera  {
+   
+    color: #fff!important;
+    background-color: #E9C6CD;
+    border-color: #E9C6CD!important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_207-verdeclaro {
+   
+    color: #fff!important;
+    background-color: #E1E8DB;
+    border-color: #E1E8DB!important;
+}
+
+
+
+.selector-sector .seletor-sku .select label.skuespec_08-maravilha {
+   
+    color: #fff!important;
+    background-color: #A6004C;
+    border-color: #A6004C!important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_06-laranja, .selector-sector .seletor-sku .select label.skuespec_05-laranja,  
+.selector-sector .seletor-sku .select label.skuespec_225-laranjaclaro{
    
     color: #fff!important;
     background-color: orange;
     border-color: orange!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_07-azulmarinho {
+.selector-sector .seletor-sku .select label.skuespec_07-azulmarinho, .selector-sector .seletor-sku .select label.skuespec_15-natier, .selector-sector .seletor-sku .select label.skuespec_16-azulmarinho  {
    
     color: #fff!important;
     background-color: #120a8f ;
     border-color: #120a8f !important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_08-amareloouro {
+.selector-sector .seletor-sku .select label.skuespec_08-amareloouro, .selector-sector .seletor-sku .select label.skuespec_301-amareloouro,
+.selector-sector .seletor-sku .select label.skuespec_201-ouro  {
    
     color: #fff!important;
     background-color: #ffd700  ;
@@ -63,14 +102,23 @@
     border-color: #ffd700  !important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_09-azulturquesa{
+
+.selector-sector .seletor-sku .select label.skuespec_521-azul, .selector-sector .seletor-sku .select label.skuespec_204-azul {
+   
+    color: #fff!important;
+    background-color: blue  ;
+    border-color: blue  !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_09-azulturquesa, .selector-sector .seletor-sku .select label.skuespec_13-azulturquesa,
+.selector-sector .seletor-sku .select label.skuespec_226-turquesaclaro, .selector-sector .seletor-sku .select label.skuespec_211-azulturquesa{
    
     color: #fff!important;
     background-color: #40e0d0   ;
     border-color: #40e0d0   !important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_10-salmao{
+.selector-sector .seletor-sku .select label.skuespec_10-salmao, .selector-sector .seletor-sku .select label.skuespec_210-salmaoclaro{
    
     color: #fff!important;
     background-color: #fa7f72    ;
@@ -84,21 +132,36 @@
     border-color: #ccac00     !important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_104-cinzaclaro{
+.selector-sector .seletor-sku .select label.skuespec_203-cobre{
+   
+    color: #fff!important;
+    background-color: #b87333;
+    border-color: #b87333!important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_104-cinzaclaro, .selector-sector .seletor-sku .select label.skuespec_209-cristal,
+.selector-sector .seletor-sku .select label.skuespec_845-neve{
    
     color: #fff!important;
     background-color: #d3d3d3;
     border-color: #d3d3d3!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_105-ferrugem{
+.selector-sector .seletor-sku .select label.skuespec_30-cinza, .selector-sector .seletor-sku .select label.skuespec_202-prata{
+   
+    color: #fff!important;
+    background-color: gray;
+    border-color: gray!important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_105-ferrugem, .selector-sector .seletor-sku .select label.skuespec_216-ferrugem{
    
     color: #fff!important;
     background-color: #b7410e;
     border-color: #b7410e!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_106-champanhe{
+.selector-sector .seletor-sku .select label.skuespec_106-champanhe,.selector-sector .seletor-sku .select label.skuespec_215-champanhe{
    
     color: #fff!important;
     background-color: #f7e7ce ;
@@ -112,6 +175,21 @@
     border-color: #00cc00!important;
 }
 
+.selector-sector .seletor-sku .select label.skuespec_20-verde, .selector-sector .seletor-sku .select label.skuespec_524-verde,
+.selector-sector .seletor-sku .select label.skuespec_206-verde{
+   
+    color: #fff!important;
+    background-color: green;
+    border-color: green!important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_25-violeta, .selector-sector .seletor-sku .select label.skuespec_207-violeta{
+   
+    color: #fff!important;
+    background-color: #290A68;
+    border-color: #290A68!important;
+}
+
 .selector-sector .seletor-sku .select label.skuespec_11-verdeagua{
    
     color: #fff!important;
@@ -119,11 +197,11 @@
     border-color: #03bb85!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_12-bege{
+.selector-sector .seletor-sku .select label.skuespec_12-bege, .selector-sector .seletor-sku .select label.skuespec_26-bege, .selector-sector .seletor-sku .select label.skuespec_218-perolaclaro{
    
     color: #fff!important;
-    background-color: #f5f5dc;
-    border-color: #f5f5dc!important;
+    background-color: #B29A7E;
+    border-color: #B29A7E!important;
 }
 
 .selector-sector .seletor-sku .select label.skuespec_13-rosabb{
@@ -133,14 +211,15 @@
     border-color: #ffcbdb!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_14-marrom{
+.selector-sector .seletor-sku .select label.skuespec_14-marrom, .selector-sector .seletor-sku .select label.skuespec_27-marrom,
+.selector-sector .seletor-sku .select label.skuespec_311-marrom{
    
     color: #fff!important;
     background-color: #964b00;
     border-color: #964b00!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_15-vinho{
+.selector-sector .seletor-sku .select label.skuespec_15-vinho, .selector-sector .seletor-sku .select label.skuespec_61-vinho{
    
     color: #fff!important;
     background-color: #800000 ;
@@ -148,18 +227,26 @@
 }
 
 
-.selector-sector .seletor-sku .select label.skuespec_16-lilas{
+.selector-sector .seletor-sku .select label.skuespec_16-lilas, .selector-sector .seletor-sku .select label.skuespec_68-lilas, 
+.selector-sector .seletor-sku .select label.skuespec_208-lilas, .selector-sector .seletor-sku .select label.skuespec_528-lilás{
    
     color: #fff!important;
     background-color: #c8a2c8;
     border-color: #c8a2c8 !important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_17-verdeesmeralda{
+.selector-sector .seletor-sku .select label.skuespec_17-verdeesmeralda, .selector-sector .seletor-sku .select label.skuespec_213-verdeesmeralda{
    
     color: #fff!important;
     background-color: #50c878 ;
     border-color: #50c878  !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_46-verdemusgo{
+   
+    color: #fff!important;
+    background-color: #505839 ;
+    border-color: #505839  !important;
 }
 
 
@@ -171,12 +258,20 @@
 }
 
 
-.selector-sector .seletor-sku .select label.skuespec_19-amarelobb{
+.selector-sector .seletor-sku .select label.skuespec_19-amarelobb, .selector-sector .seletor-sku .select label.skuespec_846-sol{
    
     color: #fff!important;
     background-color: #ffdb58;
     border-color: #ffdb58!important;
 }
+
+.selector-sector .seletor-sku .select label.skuespec_03-amarelo, .selector-sector .seletor-sku .select label.skuespec_212-amarelo{
+   
+    color: #fff!important;
+    background-color: yellow;
+    border-color: yellow!important;
+}
+
 
 .selector-sector .seletor-sku .select label.skuespec_20-pink{
    
@@ -214,14 +309,15 @@
     border-color: #7C7955 !important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_33-rosaescuro{
+.selector-sector .seletor-sku .select label.skuespec_33-rosaescuro, .selector-sector .seletor-sku .select label.skuespec_909-tutti-frutti{
    
     color: #fff!important;
     background-color: #EE7C90 ;
     border-color: #EE7C90 !important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_76-verdepistache{
+.selector-sector .seletor-sku .select label.skuespec_76-verdepistache, .selector-sector .seletor-sku .select label.skuespec_227-verdealfaceclaro,
+.selector-sector .seletor-sku .select label.skuespec_217-verdecitrico{
    
     color: #fff!important;
     background-color: #A0B626;

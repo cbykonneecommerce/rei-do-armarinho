@@ -159,8 +159,7 @@
     border-right: solid 10px #931A29;
     /*opacity: 0.92;*/
     z-index: 9999999999;
-    padding-top: 2em;
-    padding-left: 2em;
+    
     position: absolute;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -196,7 +195,20 @@
     height: 303px;
     overflow-y: auto;
     padding-right: 0px !important;
+    padding-left: 2em;
 
+}
+
+
+::-webkit-scrollbar {
+    -webkit-appearance: none !important;
+    width: 3px !important;
+    height: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .thirdLayer {

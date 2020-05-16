@@ -31,7 +31,7 @@ if ("function" !== typeof (String.prototype.trim)) String.prototype.trim = funct
 			// Opção p/ definir a URL manualmente, ficando automático apenas a paginação. A url deve terminar com "...&PageNumber="
 			searchUrl: null,
 			// Objeto jQuery com o botão de voltar ao topo
-			returnToTop: $('<div id="returnToTop" class="qd-is-return-top"><a href="#"><span class="text">voltar ao topo</span><span class="arrowToTop"></span></a></div>'),
+			returnToTop: $('<div id="returnToTop" class="qd-is-return-top"><a href="#"><span class="text">voltar ao topo</span><span class="arrowToTop"><i class="fa fa-angle-up" style="color:white!important;font-size: 22px;"></i></span></a></div>'),
 			// Define em qual seletor a ação de observar a rolagem será aplicado (ex.: $(window).scroll(...))
 			scrollBy: document,
 			// Callback quando uma requisição ajax da prateleira é completada

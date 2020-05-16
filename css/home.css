@@ -46,7 +46,7 @@
 }
 
 
-.yv-testimonial .slick-slide div div:first-child {
+.yv-testimonial .slick-slide div div:first-child:not(.yv-img-circle) {
     background-color: #390D0C !important;
     color: white !important;
 }

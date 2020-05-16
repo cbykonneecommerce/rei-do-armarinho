@@ -3,7 +3,15 @@
 
  <header class="header-container">
      
-   
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "386px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
  
      <div class="header" style="margin-bottom: -6px;padding: 0;margin-top: -10px;">
          <div class="container">
@@ -43,7 +51,7 @@
                         <a title="Carrinho de Compras" href="/giftlist" class="btn btn-default hidden-xs">
                             <img src="/arquivos/CORACAO2.png" style="max-width: 20px"/>
                          </a>
-                        <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default">
+                        <a title="Carrinho de Compras" onclick="openNav()" class="btn btn-default">
                             <img src="/arquivos/BAG.png" style="max-width: 50px;" />
                          </a>
                     
@@ -53,18 +61,18 @@
                      <vtex.cmc:fullTextSearchBox/>
                  </div><!-- .search -->
                  
-                 <div class="sing-in col-xs-2 col-sm-3 col-md-3 col-lg-4 text-center hidden-xs">
+                 <div class="sing-in col-xs-2 col-sm-3 col-md-3 col-lg-4 text-center">
 
                     
                         <ul class="nav navbar-nav">
 
-                                <li id="usuario-giftlist" class="hidden-sm hidden-md">
+                                <li id="usuario-giftlist" class="hidden-sm hidden-md  hidden-xs">
                                         <a href="/" title="B2B" class="btn btn-default btn-orders">
                                             <img src="/arquivos/atacadonome.png" style="max-height: 50px;"/>
                                         </a>
                                 </li>
 
-                                <li class="dropdown hidden-sm hidden-md" id="usuario-login">
+                                <li class="dropdown hidden-sm hidden-md  hidden-xs" id="usuario-login">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/arquivos/boneconome.png" style="max-height: 50px;"/></a>
                                         <ul class="dropdown-menu" id="drop-login">
                                           <li><a href="/account" title="Fazer Login" class="btn btn-default btn-login">ENTRAR/CADASTRE-SE</a></li>
@@ -73,17 +81,9 @@
                                         </ul>
                                       </li>
                           
-                <script>
-                    function openNav() {
-                        document.getElementById("mySidenav").style.width = "386px";
-                    }
+               
 
-                    function closeNav() {
-                        document.getElementById("mySidenav").style.width = "0";
-                    }
-                </script>
-
-                            <li id="usuario-cart">
+                            <li id="usuario-cart" class=" hidden-xs">
                                     <div class="mini-cart col-mini-cart">
                                             <a title="Carrinho de Compras" onclick="openNav()" class="btn btn-default btn-block btn-mini-cart">
                                                <img src="/arquivos/cartnome.png" style="max-height: 50px;" />
@@ -95,7 +95,7 @@
 
                     <div class="cart-top">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 26px;
-                        margin-top: 7px;">X</a>
+                        margin-top: 7px;"><img src="/arquivos/btn-remove.png" style="width: 48px;"/></a>
                     </div>
                     
                     <div id="mini-cart-admake-aux">

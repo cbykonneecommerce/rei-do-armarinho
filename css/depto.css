@@ -41,13 +41,9 @@
 }
 
 
-.cardorder ul a:hover::after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 4px;
-    margin: 16px auto 0;
-    background: #931A29;
+.cardorder ul a:hover {
+    border-bottom: solid 4px #931A29;
+    padding-bottom: 5px;
 }
 
 .cardorder ul li a {
@@ -99,6 +95,28 @@
     margin-top: 3em;
 }
 
+#returnToTop .arrowToTop {
+    background: none !important;
+    background-color: #931A29 !important;
+    width: 20px !important;
+    height: 32px;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    display: block;
+    float: right;
+}
+
+#returnToTop span {
+    font-weight: bold;
+    height: auto;
+    line-height: 12px;
+    color: white !important;
+    height: 32px !important;
+    line-height: 14px !important;
+    background-color: #931A29;
+}
+
 
 @media screen and (max-width: 1900px) {
     .box-banner a img {
@@ -107,6 +125,10 @@
 }
 
 @media screen and (max-width: 800px) {
+
+    .cardorder {
+        display: none;
+    }
     .resultado-busca-filtro > fieldset.filterby {
         display: none;
     }

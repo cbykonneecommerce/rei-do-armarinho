@@ -375,7 +375,7 @@ label.combination_unavaliable:after {
 .selector-sector .shipping-box label .fitext {
     color: black !important;
     background: white !important;
-    border: 1px solid #8D7573!important;
+    border: 1px solid #931A29 !important;
     border-radius: 0px !important;
     line-height: 20px;
     margin-top: 8px;
@@ -384,6 +384,11 @@ label.combination_unavaliable:after {
     height: 32px;
     font-size: 14px;
     display: block;
+}
+
+#btnFreteSimulacao{
+    border: 1px solid #931A29 !important;
+    margin-top: -4px;
 }
 
 .selector-sector .shipping-box .freight-values {
@@ -409,7 +414,7 @@ label.combination_unavaliable:after {
     line-height: 17px;
 }
 
-.selector-sector .shipping-box ,.product-info .shipping-box .freight-btn {
+.product-info .shipping-box .freight-btn {
     color: white !important;
     /* background: #8D7573!important; */
     /* border: 1px solid #8D7573!important; */
@@ -422,6 +427,14 @@ label.combination_unavaliable:after {
     -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.5);
     box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 4px 0px;
     background-color: #931A29 !important;
+    font-weight: bold !important;
+}
+
+.selector-sector .shipping-box {
+    color: white !important;
+    margin-top: -4px;
+    text-transform: uppercase;
+    -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.5);
     font-weight: bold !important;
 }
 
