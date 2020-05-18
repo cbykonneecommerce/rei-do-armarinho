@@ -40,7 +40,7 @@ setTimeout(()=>{
  //formatReal(orderForm.value)
 });
 
-$(".btn-menos-check").on('click',  function(event) {
+$(".btn-menos-check", "body").on('click',  function(event) {
     var rowindex = $(this).closest('.mini-cart-item').index();
     console.log('rowindex', rowindex);
     let me =  $(".qtd-field")[rowindex];
@@ -76,7 +76,7 @@ $(".btn-menos-check").on('click',  function(event) {
 
 
 
-$(".btn-mais-check").on('click',  function(event) {
+$(".btn-mais-check", "body").on('click',  function(event) {
     var rowindex = $(this).closest('.mini-cart-item').index();
     console.log('rowindex', rowindex);
     let me =  $(".qtd-field")[rowindex];
@@ -109,7 +109,7 @@ $(".btn-mais-check").on('click',  function(event) {
 });
 
 
-$(".product-remover").on('click', function(event){
+$(".product-remover", "body").on('click', function(event){
   var rowindex = $(this).closest('.mini-cart-item').index();
   let itemsToRemove = [{"index": rowindex,
   "quantity": 0}]

@@ -102,22 +102,19 @@ $(document).ready(function () {
                             });
 
                           
-                            setTimeout(()=>{
-                                //Mobile
-                                console.log("inserindo listeners sub long " + subs.name )
-                                $(`.dropdown-btn#${subs.name}`).toggle(() => {
-                                 console.log(`.dropdown-btn#${subs.name}`)
-                                 $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
-                                 $(`.dropdown-btn#${subs.name} i`).attr('class', 'fa fa-angle-up');
-                                 $(`.dropdown-container#${subs.name}`).slideDown()
-                             }, () => {
-                                 $(`.dropdown-container#${subs.name}`).slideUp()
-                                 $(`.dropdown-btn#${subs.name} i`).attr('class', 'fa fa-angle-down');
-                             })
-                     
 
-                            },200)
-                                     
+                                     //Mobile
+                                     console.log("inserindo listeners sub")
+           $(`.dropdown-btn#${subs.name}`).toggle(() => {
+            console.log(`.dropdown-btn#${subs.name}`)
+            $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
+            $(`.dropdown-btn#${subs.name} i`).attr('class', 'fa fa-angle-up');
+            $(`.dropdown-container#${subs.name}`).slideDown()
+        }, () => {
+            $(`.dropdown-container#${subs.name}`).slideUp()
+            $(`.dropdown-btn#${subs.name} i`).attr('class', 'fa fa-angle-down');
+        })
+
 
                             subs.children.forEach((grandsubs) => {
                               //  console.log("adding grandchildren");
@@ -143,10 +140,6 @@ $(document).ready(function () {
                              </ul>
                          </div>
                                 `);
-                                  //mobile
-                                  $(`.dropdown-container#${subs.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsubs}</a></span>
-                                  <button class="dropdown-btn" id="${grandsubs.name}"><i class="fa fa-angle-down"></i></button></div>
-                                  <div class="dropdown-container" id="${grandsubs.name}"></div>`);
 
 
                                     $(`.depto-${element.name} .row .col-sm-4.secondLayer-${subs.name}  ul .item-${grandsubs.name}`).mouseenter(function () {
@@ -156,31 +149,28 @@ $(document).ready(function () {
                                     });
 
 
-                                        
-                                               
+                                                            //Mobile
+                                                            console.log("inserindo listeners grandsub")
+           $(`.dropdown-btn#${grandsubs.name}`).toggle(() => {
+            console.log(`.dropdown-btn#${grandsubs.name}`)
+            $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
+            $(`.dropdown-btn#${grandsubs.name} i`).attr('class', 'fa fa-angle-up');
+            $(`.dropdown-container#${grandsubs.name}`).slideDown()
+        }, () => {
+            $(`.dropdown-container#${grandsubs.name}`).slideUp()
+            $(`.dropdown-btn#${grandsubs.name} i`).attr('class', 'fa fa-angle-down');
+        })
 
 
 
-                                  
-
-
-                                    setTimeout(()=>{
-                                        //Mobile
-                                        console.log("inserindo listeners grandsub  long " + grandsubs.name)
-                                        $(`.dropdown-btn#${grandsubs.name}`).toggle(() => {
-                                         console.log(`.dropdown-btn#${grandsubs.name}`)
-                                         $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
-                                         $(`.dropdown-btn#${grandsubs.name} i`).attr('class', 'fa fa-angle-up');
-                                         $(`.dropdown-container#${grandsubs.name}`).slideDown()
-                                     }, () => {
-                                         $(`.dropdown-container#${grandsubs.name}`).slideUp()
-                                         $(`.dropdown-btn#${grandsubs.name} i`).attr('class', 'fa fa-angle-down');
-                                     })
-                                                                   },200)
+                                    //mobile
+                                    $(`.dropdown-container#${subs.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsubs}</a></span>
+                                    <button class="dropdown-btn" id="${grandsubs.name}"><i class="fa fa-angle-down"></i></button></div>
+                                    <div class="dropdown-container" id="${grandsubs.name}"></div>`);
 
 
 
-                                    grandsubs.children.forEach((ggsubs, index) => {
+                                    grandsubs.children.forEach((ggsubs) => {
                                       //  console.log("adding grandgrandchildren");
                                       //  console.log(ggsubs);
 
@@ -190,21 +180,18 @@ $(document).ready(function () {
                                         $(`.depto-${element.name} .row .col-sm-4.thirdLayer-${grandsubs.name}  ul`).append(`<li><a href="${ggsubs.url}" class="item-${ggsubs.name}"><i class="fa fa-angle-right"></i>${divtextggsubs}</a></li>`);
 
                                         //mobile
-                                        setTimeout(()=>{
-                                            $(`.dropdown-container#${grandsubs.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${ggsubs.name}"><a href="${ggsubs.url}">${divtextggsubs}</a></span></div>`);
+                                        $(`.dropdown-container#${grandsubs.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${ggsubs.name}"><a href="${ggsubs.url}">${divtextggsubs}</a></span></div>`);
 
-                                            console.log("inserindo listeners ggsub temp")
-                                            $(`.dropdown-btn#${ggsubs.name}`).toggle(() => {
-                                                console.log(`.dropdown-btn#${ggsubs.name}`)
-                                             $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
-                                             $(`.dropdown-btn#${ggsubs.name} i`).attr('class', 'fa fa-angle-up');
-                                             $(`.dropdown-container#${ggsubs.name}`).slideDown()
-                                         }, () => {
-                                             $(`.dropdown-container#${ggsubs.name}`).slideUp()
-                                             $(`.dropdown-btn#${ggsubs.name} i`).attr('class', 'fa fa-angle-down');
-                                         })
-                                        }, index * 2000)
-                                   
+                                        console.log("inserindo listeners ggsub")
+                                        $(`.dropdown-btn#${ggsubs.name}`).toggle(() => {
+                                            console.log(`.dropdown-btn#${ggsubs.name}`)
+                                         $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
+                                         $(`.dropdown-btn#${ggsubs.name} i`).attr('class', 'fa fa-angle-up');
+                                         $(`.dropdown-container#${ggsubs.name}`).slideDown()
+                                     }, () => {
+                                         $(`.dropdown-container#${ggsubs.name}`).slideUp()
+                                         $(`.dropdown-btn#${ggsubs.name} i`).attr('class', 'fa fa-angle-down');
+                                     })
 
                                     })
 
