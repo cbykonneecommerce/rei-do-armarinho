@@ -38,6 +38,10 @@ function IsOnlyOneSKU() {
         $(".product-sku-selector-btn").hide();
         $("#only-one-sku-sector").show();
     } 
+
+    if(skuJson.skus.length <= 1 && !skuJson.available) {
+        $(".buy-button-box .box-qtd").hide();
+    }
     
 }
 
@@ -125,6 +129,11 @@ $("#selector-closer").click(()=>{
    $(".selector-sector").hide();
 })
 
+
+for(let i= 0;i < 4; i++) {
+    $(".sku-selector-container ul li.select span").append("<label for='1167_Cor_0' class='hide-me' style='visibility: hidden;'>HIDDEN</label>");
+
+}
 
 
 

@@ -10,7 +10,7 @@ $(document).ready(function () {
 
             response.forEach(element => {
                 let divtext = element.name;
-                element.name = element.name.replace(/[\s/]+/g, '-');
+                element.name = element.name.replace(/[\s/,]+/g, '-');
 
                 //desk
                 $(".deptos ul").append(`<li class="depto-${element.name}"><a href="${element.url}">${divtext}</a></li>`);
@@ -64,9 +64,9 @@ $(document).ready(function () {
                       //  console.log("adding children");
                       //  console.log(subs)
                         let divtextsub = subs.name;
-                        subs.name = subs.name.replace(/[\s/]+/g, '-');
+                        subs.name = subs.name.replace(/[\s/,]+/g, '-');
                         //desktop
-                        $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul`).append(`<li><a href="${subs.url}" class="item-${subs.name}"><i class="fa fa-angle-right"></i>${divtextsub}</a></li>`);
+                        $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul`).append(`<li  class="item-${subs.name}"><a href="${subs.url}"><i class="fa fa-angle-right"></i>${divtextsub}</a></li>`);
                        
                        if(!subs.hasChildren) {
                         $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${element.name}"><a href="${subs.url}">${divtextsub}</a></span></div>`);
@@ -102,7 +102,7 @@ $(document).ready(function () {
                             });
 
                           
-                            setTimeout(()=>{
+                            
                                 //Mobile
                                 console.log("inserindo listeners sub long " + subs.name )
                                 $(`.dropdown-btn#${subs.name}`).toggle(() => {
@@ -116,20 +116,20 @@ $(document).ready(function () {
                              })
                      
 
-                            },200)
+                           
                                      
 
                             subs.children.forEach((grandsubs) => {
                               //  console.log("adding grandchildren");
                                // console.log(grandsubs)
                                 let divtextgrandsubs = grandsubs.name;
-                                grandsubs.name = grandsubs.name.replace(/[\s/]+/g, '-');
-                                $(`.depto-${element.name} .row .col-sm-4.secondLayer-${subs.name}  ul`).append(`<li><a href="${grandsubs.url}" class="item-${grandsubs.name}"><i class="fa fa-angle-right"></i>${divtextgrandsubs}</a></li>`);
+                                grandsubs.name = grandsubs.name.replace(/[\s/,]+/g, '-');
+                                $(`.depto-${element.name} .row .col-sm-4.secondLayer-${subs.name}  ul`).append(`<li  class="item-${grandsubs.name}"><a href="${grandsubs.url}"><i class="fa fa-angle-right"></i>${divtextgrandsubs}</a></li>`);
 
                                 //mobile
-                                if(!subs.hasChildren) {
+                                if(!grandsubs.hasChildren) {
                                     $(`.dropdown-container#${subs.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsubs}</a></span></div>`);
-            
+                                   
                                    } 
                                     
                                    
@@ -164,9 +164,10 @@ $(document).ready(function () {
                                   
 
 
-                                    setTimeout(()=>{
+                                    
                                         //Mobile
                                         console.log("inserindo listeners grandsub  long " + grandsubs.name)
+                                       
                                         $(`.dropdown-btn#${grandsubs.name}`).toggle(() => {
                                          console.log(`.dropdown-btn#${grandsubs.name}`)
                                          $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
@@ -176,7 +177,7 @@ $(document).ready(function () {
                                          $(`.dropdown-container#${grandsubs.name}`).slideUp()
                                          $(`.dropdown-btn#${grandsubs.name} i`).attr('class', 'fa fa-angle-down');
                                      })
-                                                                   },200)
+                                                               
 
 
 
@@ -185,12 +186,12 @@ $(document).ready(function () {
                                       //  console.log(ggsubs);
 
                                         let divtextggsubs = ggsubs.name;
-                                        ggsubs.name = ggsubs.name.replace(/[\s/]+/g, '-');
+                                        ggsubs.name = ggsubs.name.replace(/[\s/,]+/g, '-');
 
-                                        $(`.depto-${element.name} .row .col-sm-4.thirdLayer-${grandsubs.name}  ul`).append(`<li><a href="${ggsubs.url}" class="item-${ggsubs.name}"><i class="fa fa-angle-right"></i>${divtextggsubs}</a></li>`);
+                                        $(`.depto-${element.name} .row .col-sm-4.thirdLayer-${grandsubs.name}  ul`).append(`<li class="item-${ggsubs.name}"><a href="${ggsubs.url}"><i class="fa fa-angle-right"></i>${divtextggsubs}</a></li>`);
 
                                         //mobile
-                                        setTimeout(()=>{
+                                       
                                             $(`.dropdown-container#${grandsubs.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${ggsubs.name}"><a href="${ggsubs.url}">${divtextggsubs}</a></span></div>`);
 
                                             console.log("inserindo listeners ggsub temp")
@@ -203,7 +204,7 @@ $(document).ready(function () {
                                              $(`.dropdown-container#${ggsubs.name}`).slideUp()
                                              $(`.dropdown-btn#${ggsubs.name} i`).attr('class', 'fa fa-angle-down');
                                          })
-                                        }, index * 2000)
+                                        
                                    
 
                                     })
@@ -251,5 +252,25 @@ $(document).ready(function () {
     $(".vtexIdUI .modal-header .close").click(function () {
         window.location.href = '/';
     })
+
+    //MUDAR TAMANHO DAS IMAGENS NA BARRA DE BUSCA
+    
+
+
+    $(".fulltext-search-box.ui-autocomplete-input.ui-corner-all").on("change paste keyup", function() {
+
+        setTimeout(()=>{
+
+            const imgsLength = $(".ui-autocomplete .ui-menu-item").length;
+
+            for(let i= 0; i < imgsLength; i++) {
+                let imgProduct = $($(".ui-autocomplete .ui-menu-item img")[i]).attr("src");
+                imgProduct = imgProduct.replace(/-25-25/g, '-50-50');
+                $($(".ui-autocomplete .ui-menu-item img")[i]).attr("src",imgProduct);
+            }
+        },1000)
+      
+     });
+    
 
 });

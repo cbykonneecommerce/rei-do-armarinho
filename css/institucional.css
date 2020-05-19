@@ -23,7 +23,7 @@ b {
     padding: 5px;
     margin: 13px;
 }
-.store a, .desk-sidenav a, #mySidenav a {
+.store a, .desk-sidenav a, #mySidenavInst a {
     color: #845333;
 }
 
@@ -63,7 +63,7 @@ b {
     color: black
 }
 
-#mySidenav {
+#mySidenavInst {
     z-index: 9999999999;
     top: 0;
     left: -880px;

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+
+<head>
+    <title>Não Autorizado</title>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <link href="/arquivos/cadastrob2b.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body id="auto-page">
+
+    <div class="page" style="background-color: #EDE1C8;">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="Header" />
+        <!-- /SubTemplate: Header -->
+
+        <div id="institucional-extra-top"></div>
+
+        <section id="institucional-content" class="container">
+
+            <h2 style="text-align: center;">Olá, você ainda não está autenticado para navegar nesse site.</h2> 
+            <p  style="text-align: center;">Por favor, autentique-se <a href="/login">clicando aqui</a> ou, se ainda não tiver cadastro, preencha o formulário abaixo:</p>
+            <div class="alert alert-success hide" id="messageSuccess" role="alert"  style="text-align: center;">O pré-cadastro foi realizado com sucesso. Aguarde sua aprovação.</div>
+            <div class="alert alert-danger hide" id="messageError" role="alert"  style="text-align: center;">Algum erro aconteceu com seu pré-cadastro. Verifique se todos os dados obrigatórios 
+                foram preenchidos e ente novamente.</div>
+           
+
+
+            <form class="">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="control-label" for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome"/>
+                        </div>
+    
+                        <div class="col-sm-4">
+                            <label class="control-label" for="razaosocial">Razão Social</label>
+                            <input type="text" class="form-control" id="razaosocial" placeholder="Razão Social"/>
+                        </div>
+    
+                        <div class="col-sm-4">
+                            <label class="control-label" for="cnpj">CNPJ</label>
+                            <input type="text" class="form-control" id="cnpj" placeholder="CNPJ"/>
+                        </div>
+                    </div>
+                    
+                
+                  
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="control-label" for="nomefantasia">Nome Fantasia</label>
+                            <input type="text" class="form-control" id="nomefantasia" placeholder="Nome Fantasia"/>
+                        </div>
+    
+                        <div class="col-sm-4">
+                            <label class="control-label" for="im">IM</label>
+                            <input type="text" class="form-control" id="im" placeholder="IM"/>
+                        </div>
+                    </div>
+
+                   
+
+                    
+                
+                  
+                </div>
+
+                <div class="form-group">
+<div class="row">
+    <div class="col-sm-1">
+        <div class="checkbox">
+            <label>Isento</label><input type="checkbox"  id="teminscricao" style=" margin-left: 1em; margin-top: -5px;"/>
+          </div>
+       
+    </div>
+    <div class="col-sm-4" id="inscriçãocampo" style="margin-left: 2em;">
+        <label class="control-label" for="inscriacaoEstadual">Inscrição estadual</label>
+        <input type="text" class="form-control" id="inscriacaoEstadual" placeholder="Inscrição estadual"/>
+    </div>
+</div>
+                   
+
+                  
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="control-label" for="endereco">Endereço</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Endereço"/>
+                        </div>
+        
+                        
+        
+                        <div class="col-sm-4">
+                            <label class="control-label" for="cidade">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Cidade"/>
+                        </div>
+                        <div class="col-sm-1">
+                            <label class="control-label" for="estado" style="display: block;">Estado</label>
+                            <select name="estado" id="estado">
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                              </select>
+                        </div>
+                    </div>
+                  
+                </div>
+
+                <div class="form-group">
+
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label class="control-label" for="cep">CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="CEP"/>
+                        </div>
+    
+                        <div class="col-sm-2">
+                            <label class="control-label" for="celular">Celular</label>
+                            <input type="tel" class="form-control" id="celular" placeholder="Celular/ Whatsapp"/>
+                        </div>
+                        
+                        <div class="col-sm-2">
+                            <label class="control-label" for="telefone">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" placeholder="Telefone"/>
+                        </div>
+    
+                        <div class="col-sm-4">
+                            <label class="control-label" for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="E-mail"/>
+                        </div>
+                    </div>
+
+                   
+                
+                  
+                </div>
+
+                
+              </form>
+
+              <div class="" style="text-align: center;    margin-bottom: 2em;">
+                <button type="submit" class="btn btn-default"  id="buttonSubmit" name="buttonSubmit" value="Salvar Pré-cadastro" onclick="clientValidate()">CADASTRAR</button>
+              </div>
+
+
+
+        </section><!-- #content -->
+
+
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="Footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+</body>
+<vtex:template id="commonScripts" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="/arquivos/cadastrob2b.js"></script>
+
+</html>
+

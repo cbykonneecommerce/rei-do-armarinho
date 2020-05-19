@@ -119,6 +119,12 @@
         margin-left: 135px !important;
         margin-right: 135px !important;
     }
+
+    .selo-de-seguranca {
+        max-width: 276px !important;
+        margin-top: -31px !important;
+        margin-left: -15px !important;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -156,5 +162,10 @@
 
     .social-icons li a img {
         margin-top: 0;
+    }
+
+    .selo-de-seguranca {
+        max-width: 276px !important;
+        margin-top: -31px !important;
     }
 }

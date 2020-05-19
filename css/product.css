@@ -875,6 +875,11 @@ color: #390D0C;
     .product-image .zoomPad  {
         left: -70px !important;
     }
+
+    
+.carregar-prox-pg{
+    margin-left: 12em;
+}
     
 }
 
@@ -894,8 +899,8 @@ color: #390D0C;
 
 @media (min-width: 1200px) and (max-height: 770px) {
     .product-details .product-image {
-        width: 73%;
-    margin-left: 18%
+        width:  415px;
+        margin-left: 63px;
     }
 
     .product-details .seletor-sku .topic {
@@ -903,5 +908,10 @@ color: #390D0C;
     }
     
 }
+
+
+
+
+
 
 

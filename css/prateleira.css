@@ -10,7 +10,7 @@
 
 .prateleira .box-item {
     background-color: white !important;
-    height: 24.5em;
+    height: 27.5em;
     position: relative;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .prateleira .product-name{
-    min-height: 60px !important;
+    min-height: 74px !important;
 }
 select, fieldset {
 
@@ -114,7 +114,7 @@ select, fieldset {
         margin-top: 1em;
     }
     .prateleira .box-item {
-        height: 26em;
+        height: 27em;
         padding: 6px !important;
     }
 }

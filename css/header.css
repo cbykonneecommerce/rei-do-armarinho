@@ -9,6 +9,14 @@
 
 .ui-autocomplete {
     z-index: 9999999999 !important;
+    width: 546px ! important;
+    border: solid 2px #931A29;
+    border-radius: 10px !important;
+}
+
+.ui-autocomplete .ui-menu-item img {
+    width: 50px !important;
+    height: 50px !important;
 }
 
 .header-container {
@@ -19,9 +27,11 @@
     padding-top: 8px;
 }
 
+
+
 #top-menu {
     position: sticky;
-    top: 10%;
+    top: 9.9em;
     z-index: 10000000;
 }
 
@@ -185,10 +195,14 @@
     padding-right: 10px;
 }
 
+
 #deptos-list a i:hover{
     color: white !important;
 }
 
+#deptos-list ul li:hover a {
+    color: white !important;
+}
 
 .firstLayer, .secondLayer {
     border-right: solid 5px #931A29;
@@ -459,6 +473,36 @@
     margin-left: 50px;
 }
 
+
+
+.vtexIdUI .btn-success {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #931A29 !important;
+    background-image: linear-gradient(to bottom, #931A29, #931A29) !important;
+    background-repeat: repeat-x;
+    border-color: #931A29 #931A29 #931A29 !important;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.vtexIdUI .modal-header {
+    color: white !important;
+    background: #390D0C !important;
+    border-bottom: 1px solid #390D0C !important;
+    border-top: 1px solid #390D0C;
+}
+.vtexIdUI a {
+    color: white !important
+}
+
+.vtexIdUI .modal-header .close {
+    background: #931A29 !important;
+}
+
+.vtexIdUI{
+    border:none !important;
+}
+
 @media screen and (max-height: 450px) {
     .sidenavcart {
         padding-top: 15px;
@@ -496,6 +540,11 @@
     .vtexIdUI {
         top: 28% !important;
 
+    }
+
+    .ui-autocomplete {
+        width: 328px ! important;
+        left: 20px !important;
     }
 }
 
