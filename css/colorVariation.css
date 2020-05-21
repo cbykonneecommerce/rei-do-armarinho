@@ -1,12 +1,14 @@
 
-.selector-sector .seletor-sku .select label.skuespec_Corunica{
+.selector-sector .seletor-sku .select label.skuespec_Corunica, .selector-sector .seletor-sku .select label{
    
     color: #931A29 !important;
     background-color: #fff;
     border-color: #931A29  !important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_01-branco {
+.selector-sector .seletor-sku .select label.skuespec_01-branco, 
+.selector-sector .seletor-sku .select label.skuespec_0001-branco,
+.selector-sector .seletor-sku .select label.skuespec_00bc-branco-0007 {
   
     color: #333!important;
     background-color: #fff;
@@ -23,8 +25,11 @@
     border-color: #000!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_03-vermelho, .selector-sector .seletor-sku .select label.skuespec_09-vermelho,
-.selector-sector .seletor-sku .select label.skuespec_309-vermelhoescuro, .selector-sector .seletor-sku .select label.skuespec_205-vermelho{
+.selector-sector .seletor-sku .select label.skuespec_03-vermelho, 
+.selector-sector .seletor-sku .select label.skuespec_09-vermelho,
+.selector-sector .seletor-sku .select label.skuespec_309-vermelhoescuro, 
+.selector-sector .seletor-sku .select label.skuespec_205-vermelho,
+.selector-sector .seletor-sku .select label.skuespec_Cor_opcao_2900-P{
   
     color: white!important;
     background-color: red;
@@ -48,8 +53,11 @@
 }
 
 
-.selector-sector .seletor-sku .select label.skuespec_205-rosaclaro, .selector-sector .seletor-sku .select label.skuespec_222-pinkclaro,
-.selector-sector .seletor-sku .select label.skuespec_214-rose, .selector-sector .seletor-sku .select label.skuespec_910-rosaprimavera  {
+.selector-sector .seletor-sku .select label.skuespec_205-rosaclaro, 
+.selector-sector .seletor-sku .select label.skuespec_222-pinkclaro,
+.selector-sector .seletor-sku .select label.skuespec_214-rose, 
+.selector-sector .seletor-sku .select label.skuespec_910-rosaprimavera,
+.selector-sector .seletor-sku .select label.skuespec_5211-2861  {
    
     color: #fff!important;
     background-color: #E9C6CD;
@@ -72,8 +80,10 @@
     border-color: #A6004C!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_06-laranja, .selector-sector .seletor-sku .select label.skuespec_05-laranja,  
-.selector-sector .seletor-sku .select label.skuespec_225-laranjaclaro{
+.selector-sector .seletor-sku .select label.skuespec_06-laranja, 
+.selector-sector .seletor-sku .select label.skuespec_05-laranja,  
+.selector-sector .seletor-sku .select label.skuespec_225-laranjaclaro,
+.selector-sector .seletor-sku .select label.skuespec_0085-laranja{
    
     color: #fff!important;
     background-color: orange;
@@ -161,7 +171,10 @@
     border-color: #b7410e!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_106-champanhe,.selector-sector .seletor-sku .select label.skuespec_215-champanhe{
+.selector-sector .seletor-sku .select label.skuespec_106-champanhe,
+.selector-sector .seletor-sku .select label.skuespec_215-champanhe,
+.selector-sector .seletor-sku .select label.skuespec_Cor_opcao_3137-P
+{
    
     color: #fff!important;
     background-color: #f7e7ce ;
@@ -197,11 +210,21 @@
     border-color: #03bb85!important;
 }
 
-.selector-sector .seletor-sku .select label.skuespec_12-bege, .selector-sector .seletor-sku .select label.skuespec_26-bege, .selector-sector .seletor-sku .select label.skuespec_218-perolaclaro{
+.selector-sector .seletor-sku .select label.skuespec_12-bege,
+ .selector-sector .seletor-sku .select label.skuespec_26-bege, 
+ .selector-sector .seletor-sku .select label.skuespec_218-perolaclaro,
+ .selector-sector .seletor-sku .select label.skuespec_0083-fendi{
    
     color: #fff!important;
     background-color: #B29A7E;
     border-color: #B29A7E!important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_0084-rosablush{
+   
+    color: #fff!important;
+    background-color: #FE8181;
+    border-color: #FE8181!important;
 }
 
 .selector-sector .seletor-sku .select label.skuespec_13-rosabb{
@@ -257,6 +280,12 @@
     border-color: #9ec9e3   !important;
 }
 
+.selector-sector .seletor-sku .select label.skuespec_Cor_opcao_7234-P {
+background-color: #91D6F6;
+border-color: #91D6F6   !important;
+color: #fff!important;
+}
+
 
 .selector-sector .seletor-sku .select label.skuespec_19-amarelobb, .selector-sector .seletor-sku .select label.skuespec_846-sol{
    
@@ -273,7 +302,7 @@
 }
 
 
-.selector-sector .seletor-sku .select label.skuespec_20-pink{
+.selector-sector .seletor-sku .select label.skuespec_20-pink, .selector-sector .seletor-sku .select label.skuespec_0051-rosasecreto{
    
     color: #fff!important;
     background-color: #cd7aa3 ;
