@@ -117,6 +117,31 @@
     background-color: #931A29;
 }
 
+.sub-titulo h3 .caret {
+    border-top: 10px dashed !important;
+    border-right: 10px solid transparent !important;
+    border-left: 10px solid transparent !important;
+}
+
+.fa-square-o {
+    color: #931A29 !important;
+    font-weight: 800 !important;
+}
+
+#admake-advanced-filter .opcoes {
+    overflow: visible !important;
+}
+
+#admake-advanced-filter .box-filtro.checkbox li a {
+    color: #333 !important;
+    font-weight: 500 !important;
+}
+
+#admake-advanced-filter > .box-filtro  {
+    border: 1px solid #390D0C !important;
+    border-radius: 15px;
+    width: 100%;
+}
 
 @media screen and (max-width: 1900px) {
     .box-banner a img {
@@ -178,7 +203,7 @@
         display: inline-grid;
         background-color: white;
         min-width: 150px;
-        border-bottom: none !important;
+        /*border-bottom: none !important;*/
     }
 
     .carregar-prox-pg {

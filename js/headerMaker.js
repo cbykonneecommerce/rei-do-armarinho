@@ -96,7 +96,8 @@ $(document).ready(function () {
 
                             //Desktop
                             $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
-                                $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
+                               // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
+                                $(`.deptonav .row .col-sm-4.secondLayer`).hide()
                                 $(`.depto-${element.name} .row .col-sm-4.thirdLayer`).hide()
                                 $(`.depto-${element.name} .row .col-sm-4.secondLayer-${subs.name}`).show()
                             });
@@ -267,7 +268,7 @@ $(document).ready(function () {
 
 $(".fulltext-search-box.ui-autocomplete-input.ui-corner-all").on("change paste keyup", function() {
 
-    setTimeout(()=>{
+    setInterval(()=>{
 
         const imgsLength = $(".ui-autocomplete .ui-menu-item").length;
 

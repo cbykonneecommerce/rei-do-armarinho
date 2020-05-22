@@ -106,7 +106,7 @@
 }
 
 #mini-cart-admake {
-    width: 386px !important;
+    /*width: 386px !important;*/
     border-radius: 0 !important;
     box-shadow: none !important;
     border: none !important;
@@ -429,7 +429,7 @@
 
 #mini-cart-admake {
     display: block !important;
-    width: 100%;
+    width: 100% !important;
     position: initial !important;
     border-radius: 0px !important;
     box-shadow: none !important;

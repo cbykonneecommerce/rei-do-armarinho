@@ -1,4 +1,22 @@
 
+
+   function openNav() {
+
+    const mq = window.matchMedia("(max-width: 600px)");
+    if (mq.matches) {
+      document.getElementById("mySidenav").style.width = `${document.documentElement.clientWidth}px`;
+    } else{
+      document.getElementById("mySidenav").style.width = "485px";
+    }
+    }
+    
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
 function formatReal( int )
 {
         var tmp = int+'';
@@ -25,7 +43,7 @@ setTimeout(()=>{
         <span class="product-remover"><img src="/arquivos/btn-remove.png"  style="width: 31px;
         position: absolute;
         top: -6px;
-        right: 37px;"/></span>
+        right: 2px;"/></span>
     `);
 
     $(".qtd-field").prop("disabled", true);
@@ -39,6 +57,8 @@ setTimeout(()=>{
     $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
  //formatReal(orderForm.value)
 });
+
+/*
 
 $(".btn-menos-check", "body").on('click',  function(event) {
     var rowindex = $(this).closest('.mini-cart-item').index();
@@ -115,10 +135,93 @@ $(".product-remover", "body").on('click', function(event){
   "quantity": 0}]
   vtexjs.checkout.removeItems(itemsToRemove).then(res=>{
     console.log("removido");
-    $($(".mini-cart-item")[rowindex]).fadeOut();
+    
+    $($(".mini-cart-item")[rowindex]).remove();
+
+  });
+})
+*/
+},2000);
+
+
+
+
+$(document).on('click', ".btn-mais-check",  function(event) {
+  var rowindex = $(this).closest('.mini-cart-item').index();
+  console.log('rowindex', rowindex);
+  let me =  $(".qtd-field")[rowindex];
+ let value = parseInt($($(".qtd-field")[rowindex]).val())
+ console.log(me, value);
+
+
+     value +=  1;
+     console.log(value)
+     $($("#mini-cart-admake .mini-cart-item .qtd-valor .qtd")[rowindex]).text( `${value} X`)
+ // $(me).val(value)
+  $($(".qtd-field")[rowindex]).val(value)
+
+  vtexjs.checkout.getOrderForm()
+.then(function(orderForm) {
+  var itemIndex = 0;
+  var item = orderForm.items[rowindex];
+  var updateItem = {
+    index: rowindex,
+    quantity:  value
+  };
+  return vtexjs.checkout.updateItems([updateItem], null, false);
+})
+.done(function(orderForm) {
+  //alert('Items atualizados!');
+  console.log(orderForm);
+  $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
+});
+
+});
+
+$(document).on('click',".btn-menos-check",  function(event) {
+  var rowindex = $(this).closest('.mini-cart-item').index();
+  console.log('rowindex', rowindex);
+  let me =  $(".qtd-field")[rowindex];
+ let value = parseInt($($(".qtd-field")[rowindex]).val())
+ console.log(me, value);
+
+ if (value > 1) {
+     console.log("entrei")
+     value -=  1;
+     console.log(value)
+     $($("#mini-cart-admake .mini-cart-item .qtd-valor .qtd")[rowindex]).text(`${value} X`)
+  
+ // $(me).val(value)
+  $($(".qtd-field")[rowindex]).val(value)
+
+  vtexjs.checkout.getOrderForm()
+.then(function(orderForm) {
+  var itemIndex = 0;
+  var item = orderForm.items[rowindex];
+  var updateItem = {
+    index: rowindex,
+    quantity:  value
+  };
+  return vtexjs.checkout.updateItems([updateItem], null, false);
+})
+.done(function(orderForm) {
+  //alert('Items atualizados!');
+  console.log(orderForm);
+  $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
+});
+}
+});
+
+
+$(document).on('click', ".product-remover", function(event){
+  var rowindex = $(this).closest('.mini-cart-item').index();
+  let itemsToRemove = [{"index": rowindex,
+  "quantity": 0}]
+  vtexjs.checkout.removeItems(itemsToRemove).then(res=>{
+    console.log("removido");
+    
     $($(".mini-cart-item")[rowindex]).remove();
 
   });
 })
 
-},1000)

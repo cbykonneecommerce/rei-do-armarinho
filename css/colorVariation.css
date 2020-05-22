@@ -18,7 +18,7 @@
 
 .selector-sector .seletor-sku .select label.skuespec_02-preto, .selector-sector .seletor-sku .select label.skuespec_39-preto,
  .selector-sector .seletor-sku .select label.skuespec_31-preto, .selector-sector .seletor-sku .select label.skuespec_520-preto,
- .selector-sector .seletor-sku .select label.skuespec_304-preto{
+ .selector-sector .seletor-sku .select label.skuespec_304-preto,.selector-sector .seletor-sku .select label.skuespec_8990-preto{
   
     color: #fff!important;
     background-color: #000;
@@ -354,6 +354,431 @@ color: #fff!important;
 }
 
 
+.selector-sector .seletor-sku .select label.skuespec_1112-creme{
+   
+    color: #fff!important;
+    background-color: rgb(237,233,200) ;
+    border-color: rgb(237,233,200) !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_1289-canario{
+   
+    color: #fff!important;
+    background-color: #F0C202 ;
+    border-color:#F0C202 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_1317-solar{
+   
+    color: #fff!important;
+    background-color: #F0D273 ;
+    border-color:#F0D273 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_2137-hortencia{
+   
+    color: #fff!important;
+    background-color: #80A5C8 ;
+    border-color:#80A5C8 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_2194-turquesa{
+   
+    color: #fff!important;
+    background-color: #04A3D4 ;
+    border-color:#04A3D4 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_2829-azulbic{
+   
+    color: #fff!important;
+    background-color: #225EA6 ;
+    border-color:#225EA6 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_2856-anilprofundo{
+   
+    color: #fff!important;
+    background-color: #21264D ;
+    border-color:#21264D !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_2927-aquario{
+   
+    color: #fff!important;
+    background-color: #899EA9 ;
+    border-color:#899EA9 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_2930-netuno{
+   
+    color: #fff!important;
+    background-color: #3C7E8C ;
+    border-color:#3C7E8C !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_2931-nautico{
+   
+    color: #fff!important;
+    background-color: #465B78 ;
+    border-color:#465B78 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_3046-docura{
+   
+    color: #fff!important;
+    background-color: #EED6D5 ;
+    border-color:#EED6D5 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_3077-quartzo{
+   
+    color: #fff!important;
+    background-color: #E2BFC6 ;
+    border-color:#E2BFC6 !important;
+}
+
+
+.selector-sector .seletor-sku .select label.skuespec_3131-chiclete{
+   
+    color: #fff!important;
+    background-color: #E7ACBC ;
+    border-color:#E7ACBC !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_3148-macadamia{
+   
+    color: #000!important;
+    background-color: #DFCDC3 ;
+    border-color:#DFCDC3 !important;
+}
+
+
+.selector-sector .seletor-sku .select label.skuespec_3154-vinho{
+   
+    color: #fff!important;
+    background-color: #803653 ;
+    border-color:#803653 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_3157-roseira{
+   
+    color: #fff!important;
+    background-color: #AC6A6F ;
+    border-color:#AC6A6F !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_3182-pitaya{
+   
+    color: #fff!important;
+    background-color: #A7546E ;
+    border-color:#A7546E !important;
+}
+.selector-sector .seletor-sku .select label.skuespec_3201-camafeu{
+   
+    color: #fff!important;
+    background-color: #BE9B90 ;
+    border-color:#BE9B90 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_3334-tulipa{
+   
+    color: #fff!important;
+    background-color: #D2536A ;
+    border-color:#D2536A !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_3528-carmim{
+   
+    color: #fff!important;
+    background-color: #8D0D21 ;
+    border-color:#8D0D21 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_3583-cereja{
+   
+    color: #fff!important;
+    background-color: #E25247 ;
+    border-color:#E25247 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_3611-rubi{
+   
+    color: #fff!important;
+    background-color: #5E0119 ;
+    border-color:#5E0119 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_4004-coralvivo{
+   
+    color: #fff!important;
+    background-color: #EC7E79 ;
+    border-color:#EC7E79 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_4092-organza{
+   
+    color: #fff!important;
+    background-color: #E0BAA7 ;
+    border-color:#E0BAA7 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_4093-tafeta{
+   
+    color: #fff!important;
+    background-color: #CF7562;
+    border-color:#CF7562 !important;
+}
+
+
+
+.selector-sector .seletor-sku .select label.skuespec_4094-cetim{
+   
+    color: #fff!important;
+    background-color: #D09A81;
+    border-color:#D09A81 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_4094-cetim{
+   
+    color: #fff!important;
+    background-color: #D09A81;
+    border-color:#D09A81 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_4095-rum{
+   
+    color: #fff!important;
+    background-color: #994836;
+    border-color:#994836 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_4131-darkcheddar{
+   
+    color: #fff!important;
+    background-color: #FDA107;
+    border-color:#FDA107 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_4146-gema{
+   
+    color: #fff!important;
+    background-color: #F6AD1A;
+    border-color:#F6AD1A !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_4448-tijolo{
+   
+    color: #fff!important;
+    background-color: #D45E38;
+    border-color:#D45E38 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_4456-laranja{
+   
+    color: #fff!important;
+    background-color: #EF781C;
+    border-color:#EF781C !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_5203-greenery{
+   
+    color: #fff!important;
+    background-color: #B1E177;
+    border-color:#B1E177 !important;
+}
+
+
+.selector-sector .seletor-sku .select label.skuespec_5398-musgo{
+   
+    color: #fff!important;
+    background-color: #406343;
+    border-color:#406343 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_5669-tiffany{
+   
+    color: #fff!important;
+    background-color: #12A27F;
+    border-color:#12A27F !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_5741-periquito{
+   
+    color: #fff!important;
+    background-color: #B9CC96;
+    border-color:#B9CC96 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_5743-nascente{
+   
+    color: #fff!important;
+    background-color: #A5CCB4;
+    border-color:#A5CCB4 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_5745-eucalipto{
+   
+    color: #fff!important;
+    background-color: #9CA695;
+    border-color:#9CA695 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_5745-eucalipto{
+   
+    color: #fff!important;
+    background-color: #9CA695;
+    border-color:#9CA695 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_5767-bandeira{
+   
+    color: #fff!important;
+    background-color: #008447;
+    border-color:#008447 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_5800-oliva{
+   
+    color: #fff!important;
+    background-color: #939B40;
+    border-color:#939B40 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_6161-violeta{
+   
+    color: #fff!important;
+    background-color: #BD99AC;
+    border-color:#BD99AC !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_6201-tecno{
+   
+    color: #fff!important;
+    background-color: #785FA4;
+    border-color:#785FA4 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_6614-alfazema{
+   
+    color: #fff!important;
+    background-color: #98568E;
+    border-color:#98568E !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_6802-malva{
+   
+    color: #fff!important;
+    background-color: #B7A3AC;
+    border-color:#B7A3AC !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_7030-mostarda{
+   
+    color: #fff!important;
+    background-color: #FCD573;
+    border-color:#FCD573 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_7136-marsala{
+   
+    color: #fff!important;
+    background-color: #7E323A;
+    border-color:#7E323A !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_7563-chantily{
+   
+    color: #fff!important;
+    background-color: #CDBDAC;
+    border-color:#CDBDAC !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_7564-porcelana{
+   
+    color: #fff!important;
+    background-color: #D3C3AB;
+    border-color:#D3C3AB !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_7567-cacau{
+   
+    color: #fff!important;
+    background-color: #D3C3AB;
+    border-color:#D3C3AB !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_7569-tabaco{
+   
+    color: #fff!important;
+    background-color: #301815;
+    border-color:#301815 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_7525-castanha{
+   
+    color: #fff!important;
+    background-color: #B79D7D;
+    border-color:#B79D7D !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_7650-amendoa{
+   
+    color: #fff!important;
+    background-color: #C8B8A2;
+    border-color:#C8B8A2 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_8001-branca{
+   
+    color: #333!important;
+    background-color: #fff;
+    border-color: #333!important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_8008-pedreira{
+   
+    color: #333!important;
+    background-color: #CFCCC6;
+    border-color:#CFCCC6 !important;
+}
+
+
+.selector-sector .seletor-sku .select label.skuespec_8013-glacial{
+   
+    color: #fff!important;
+    background-color: #B6BEBB;
+    border-color:#B6BEBB !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_8176-offwhite{
+   
+    color: #333!important;
+    background-color: #DDD7D1;
+    border-color:#DDD7D1 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_8797-aco{
+   
+    color: #fff!important;
+    background-color: #9F9994;
+    border-color:#9F9994 !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_9278-lhama{
+   
+    color: #fff!important;
+    background-color: #01CED3;
+    border-color:#01CED3 !important;
+}
+
+
+.selector-sector .seletor-sku .select label.skuespec_9534-unicornio{
+   
+    color: #fff!important;
+    background-color: #F2B5E1;
+    border-color:#F2B5E1 !important;
+}
 
 
 

@@ -222,6 +222,7 @@
     text-align: center;
     border-radius: 10px !important;
     line-height: 25px;
+    cursor: pointer;
 }
 
 .add-to-cart-button {
@@ -249,7 +250,7 @@
     line-height: 25px;
 }
 .buy-button.buy-button-ref{
-    margin-top: 6%;
+    margin-top: 0%;
 }
 
 .product-info .shipping-box .freight-btn {
@@ -313,7 +314,7 @@ span#spnRatingProdutoTop {
     border-radius: 0;
     color: white !important;
     display: -webkit-box;
-    margin-top: 6%;
+    margin-top: 0%;
 }
 
 
@@ -793,6 +794,15 @@ color: #390D0C;
     background: #C6A25E;
 }
 
+.product-details .codigo-produto .brandName  {
+    float: right;
+
+}
+.product-details .codigo-produto .brandName a  {
+    color: #931A29;
+    text-decoration: none;
+}
+
 @media screen and (min-width: 1100px) {
     .product-image .apresentacao {
         margin-left: 15%
@@ -804,7 +814,7 @@ color: #390D0C;
         margin-top: 1%;
     }
     .buy-button-box .box-qtd {
-        margin-left: 25%;
+        margin-left: 20%;
     }
     .product-sku-selector-btn {
         width: 100% !important;
@@ -897,7 +907,7 @@ color: #390D0C;
 }
 
 
-@media (min-width: 1200px) and (max-height: 770px) {
+@media (min-width: 1200px) and (max-height: 780px) {
     .product-details .product-image {
         width:  415px;
         margin-left: 63px;
@@ -909,7 +919,26 @@ color: #390D0C;
     
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1700px) {
+   #comprimir {
+    width: 44% !important;
+   }
 
+   .product-image .apresentacao .thumbs {
+    right: -26%;
+    left: 0 !important;
+    top: 0 !important;
+}
+
+#selector-closer {
+    right: -94px;
+    top: -44px;
+}
+
+.product-details .product-image {
+    margin-left: 86px;
+}
+}
 
 
 

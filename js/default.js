@@ -67,16 +67,15 @@ function param(name) {
 			} else {
 				vtexjs.checkout.addToCart([item])
 					.done(function (orderForm) {
-						alert('Item adicionado!');
-						console.log("adicionando ao cart");
+						//alert('Item adicionado!');
 						console.log("adicionando ao cart");
 						const position = [orderForm.items.length - 1]
 						let latest = orderForm.items[position]
 							//UPDATE CART
 
 							$("#mini-cart-admake .mini-cart-itens").append(`
-							<div class="mini-cart-itens">
-								<!-- recebe itens -->
+							
+								
 								<div class="mini-cart-item item-${position}">
 									<span class="imagem">
 							
@@ -105,12 +104,18 @@ function param(name) {
 									<span class="product-remover"><img src="/arquivos/btn-remove.png" style="width: 31px;
 										position: absolute;
 										top: -6px;
-										right: 37px;"></span>
+										right: 2px;"></span>
 									</span>
 							
 								</div>
-							</div>`);
+							`);
+							$("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
+								
+							
 							openNav();
+							setTimeout(()=>{
+								closeNav()
+							},2500)
 							
 
 
