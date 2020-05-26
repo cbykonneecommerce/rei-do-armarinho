@@ -111,6 +111,9 @@ select, fieldset {
 max-width: 70%;
 }
 
+.prateleira .product-image img {
+    max-width: 200px !important;
+}
 
 @media (max-width: 600px)  {
     

@@ -73,7 +73,10 @@ $(document).ready(function () {
                        
                        if(!subs.hasChildren) {
                         $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${element.name}"><a href="${subs.url}">${divtextsub}</a></span></div>`);
-
+                        $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
+                            // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
+                             $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide();
+                         });
                        }
                        
 
@@ -100,7 +103,7 @@ $(document).ready(function () {
                             //Desktop
                             $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
                                // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
-                                $(`.deptonav .row .col-sm-4.secondLayer`).hide();
+                                $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide();
                                 $(`.depto-${element.name} .row .col-sm-4.thirdLayer`).hide()
                                 $(`.depto-${element.name} .row .col-sm-4.secondLayer-${subs.name}`).show()
                             });

@@ -53,7 +53,7 @@ skuEventDispatcher.addListener(skuDataReceivedEventName, batchBuyListener);
 
 setTimeout(function () {
 
-
+    IsOnlyOneSKU();
 if( !(skuJson.skus.length == 1)) {
     const imgsLength = $(".product-resume .product-image .apresentacao .thumbs li").length;
     let imgProduct = $($(".product-resume .product-image .apresentacao .thumbs li a img")[imgsLength - 1]).attr("src");
