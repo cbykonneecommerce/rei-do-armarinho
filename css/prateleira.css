@@ -107,6 +107,11 @@ select, fieldset {
 }
 
 
+.prateleira .slick-prev img,.prateleira .slick-next img {
+max-width: 70%;
+}
+
+
 @media (max-width: 600px)  {
     
     fieldset {

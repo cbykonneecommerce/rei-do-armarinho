@@ -921,11 +921,11 @@ color: #390D0C;
 
 @media screen and (min-width: 1200px) and (max-width: 1700px) {
    #comprimir {
-    width: 44% !important;
+    width: 42% !important;
    }
 
    .product-image .apresentacao .thumbs {
-    right: -26%;
+    right: -60% !important;
     left: 0 !important;
     top: 0 !important;
 }
@@ -935,9 +935,25 @@ color: #390D0C;
     top: -44px;
 }
 
+#image-main {
+    margin-left: -56px;
+}
+
+.product-image .zoomWindow {
+    left: -34px ! important;
+}
+
 .product-details .product-image {
     margin-left: 86px;
 }
+}
+
+
+
+@media (max-width: 1700px) {
+    .selector-sector .seletor-sku .select label {
+        font-size: 12px !important;
+    }
 }
 
 

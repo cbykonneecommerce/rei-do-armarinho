@@ -74,10 +74,11 @@ if( !(skuJson.skus.length == 1)) {
 
     let descriptionShort = $(".productDescription").text();
     descriptionShort = descriptionShort.slice(0, 150)
-    $("#description-inside").html(`<p>${descriptionShort}...<p> <a id="shortdes" style="color: #4F4F4F;text-decoration: underline;" href="#description">ver mais</a>`)
+    $("#description-inside").html(`<p>${descriptionShort}...<p> <a id="shortdes" style="color: #4F4F4F;text-decoration: underline;">ver mais</a>`)
       $("#shortdes").click(()=>{
         $(".product-description-box #specification").fadeOut()
         $(".product-description-box #description").fadeIn()
+        $('html,body').animate({scrollTop: $(".product-description").offset().top - 150});
       })
       $(".product-details .seletor-sku .specification").text("Selecione uma cor")
 
