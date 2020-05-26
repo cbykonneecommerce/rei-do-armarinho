@@ -65,6 +65,13 @@
 .bootstrap .secondary, .yv-bootstrap .secondary {
     color: white !important;
 }
+.prateleira .box-item {
+    height: 28.5em !important;
+}
+
+.prateleira .product-image img {
+    max-width: 200px;
+}
 
 @media screen and (max-width: 800px) {
     #sobre p, #sobre h3 {

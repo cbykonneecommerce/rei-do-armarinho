@@ -4,7 +4,7 @@
     background-color: #C6A25E !important;
 }
 
-.footer ul li a {
+.footer ul li a, .footer ul li span {
     color:#333 !important;
 }
 
@@ -42,7 +42,7 @@
     padding-bottom: 38px;
 }
 
-.footer-section ul li a {
+.footer-section ul li a, .footer-section ul li span {
     font-size: 15px;
     line-height: 25px;
     color: #565656

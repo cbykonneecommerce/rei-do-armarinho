@@ -259,9 +259,9 @@
 /* Style the sidenav links and the dropdown button */
 
 .sidenav a /*, .dropdown-btn */{
-    padding: 17px 8px 17px 16px;
+    padding: 17px 8px 17px 0px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     color: #8B8B8B;
     display: block;
     text-transform: uppercase;

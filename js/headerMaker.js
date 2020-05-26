@@ -60,6 +60,9 @@ $(document).ready(function () {
             $(`.dropdown-btn#${element.name} i`).attr('class', 'fa fa-angle-down');
         })
 
+        element.children.sort( function( a, b ) {
+            return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+        });
                     element.children.forEach((subs, index) => {
                       //  console.log("adding children");
                       //  console.log(subs)
@@ -97,7 +100,7 @@ $(document).ready(function () {
                             //Desktop
                             $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
                                // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
-                                $(`.deptonav .row .col-sm-4.secondLayer`).hide()
+                                $(`.deptonav .row .col-sm-4.secondLayer`).hide();
                                 $(`.depto-${element.name} .row .col-sm-4.thirdLayer`).hide()
                                 $(`.depto-${element.name} .row .col-sm-4.secondLayer-${subs.name}`).show()
                             });
@@ -118,7 +121,9 @@ $(document).ready(function () {
                      
 
                            
-                                     
+                             subs.children.sort( function( a, b ) {
+                                return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+                            });  
 
                             subs.children.forEach((grandsubs) => {
                               //  console.log("adding grandchildren");
@@ -181,7 +186,9 @@ $(document).ready(function () {
                                                                
 
 
-
+                                     grandsubs.children.sort( function( a, b ) {
+                                        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+                                    });
                                     grandsubs.children.forEach((ggsubs, index) => {
                                       //  console.log("adding grandgrandchildren");
                                       //  console.log(ggsubs);

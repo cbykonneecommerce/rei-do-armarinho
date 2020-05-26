@@ -50,7 +50,7 @@
                 </div>
      </div>
 
-     <div id="sidenavCTR" style="position: fixed;top: 50%;z-index: 99;background: #b3b3b3;
+     <div id="sidenavCTRfiltros" style="position: fixed;top: 50%;z-index: 99;background: #b3b3b3;
      opacity: .8;">
          <a  onclick="openNav()" id="open"><img src="/arquivos/seta02.png" style="max-width: 40px;"/></a>
          <a  onclick="closeNav()" id="close"><img src="/arquivos/seta02.png" style="max-width: 40px;"/></a>
@@ -115,20 +115,20 @@
      <script src="/arquivos/filters.js"></script>
      <script>
 
-            $("#sidenavCTR #close").hide();
+            $("#sidenavCTRfiltros #close").hide();
    
             function openNav() {
                 document.getElementById("mySidenav").style.left = "0px";
-                document.getElementById("sidenavCTR").style.left = "64%";
-                $("#sidenavCTR #open").hide();
-                $("#sidenavCTR #close").show();
+                document.getElementById("sidenavCTRfiltros").style.left = "64%";
+                $("#sidenavCTRfiltros #open").hide();
+                $("#sidenavCTRfiltros #close").show();
             }
    
             function closeNav() {
                 document.getElementById("mySidenav").style.left = "-880px";
-                document.getElementById("sidenavCTR").style.left = "0%";
-                $("#sidenavCTR #close").hide();
-                $("#sidenavCTR #open").show();
+                document.getElementById("sidenavCTRfiltros").style.left = "0%";
+                $("#sidenavCTRfiltros #close").hide();
+                $("#sidenavCTRfiltros #open").show();
             }
         </script>
 
