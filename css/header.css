@@ -399,12 +399,22 @@
     z-index: 2;
 
 }
-.slick-prev{
+
+.slick-prev {
+    left: -17px !important;
+}
+
+.slick-next {
+    right: -17px !important;
+}
+.fullbanner .slick-prev{
     left: 24px !important;
 
 }
 
-.slick-next {
+
+
+.fullbanner .slick-next {
     right: 24px !important;
 
 }
