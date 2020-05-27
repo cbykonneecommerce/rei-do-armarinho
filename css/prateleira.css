@@ -10,7 +10,7 @@
 
 .prateleira .box-item {
     background-color: white !important;
-    height: 27.5em;
+    height: 25.5em;
     position: relative;
 }
 
@@ -111,6 +111,9 @@ select, fieldset {
 max-width: 70%;
 }
 
+.prateleira .product-image img {
+    max-width: 150px !important;
+}
 
 @media (max-width: 600px)  {
     

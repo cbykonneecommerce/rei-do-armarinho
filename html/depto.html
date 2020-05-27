@@ -52,8 +52,8 @@
 
      <div id="sidenavCTRfiltros" style="position: fixed;top: 50%;z-index: 99;background: #b3b3b3;
      opacity: .8;">
-         <a  onclick="openNav()" id="open"><img src="/arquivos/seta02.png" style="max-width: 40px;"/></a>
-         <a  onclick="closeNav()" id="close"><img src="/arquivos/seta02.png" style="max-width: 40px;"/></a>
+         <a  onclick="openNavfiltro()" id="open"><img src="/arquivos/seta02.png" style="max-width: 40px;"/></a>
+         <a  onclick="closeNavfiltro()" id="close"><img src="/arquivos/seta02.png" style="max-width: 40px;"/></a>
      </div>
  
          <section id="content" class="container">
@@ -63,7 +63,7 @@
  
              <div class="row">
  
-                 <aside class="col-xs-3 sidebar"  id="mySidenav">
+                 <aside class="col-xs-3 sidebar"  id="mySidenavfiltros">
                      <div id="departament-navegador">
                          <!--  Controle: navegador de departamento -->
                          <vtex.cmc:singleDepartmentNavigator keepCurrentPath="true" />
@@ -117,15 +117,15 @@
 
             $("#sidenavCTRfiltros #close").hide();
    
-            function openNav() {
-                document.getElementById("mySidenav").style.left = "0px";
+            function openNavfiltro() {
+                document.getElementById("mySidenavfiltros").style.left = "0px";
                 document.getElementById("sidenavCTRfiltros").style.left = "64%";
                 $("#sidenavCTRfiltros #open").hide();
                 $("#sidenavCTRfiltros #close").show();
             }
    
-            function closeNav() {
-                document.getElementById("mySidenav").style.left = "-880px";
+            function closeNavfiltro() {
+                document.getElementById("mySidenavfiltros").style.left = "-880px";
                 document.getElementById("sidenavCTRfiltros").style.left = "0%";
                 $("#sidenavCTRfiltros #close").hide();
                 $("#sidenavCTRfiltros #open").show();

@@ -120,8 +120,8 @@
     }
 
     .selo-de-seguranca {
-        max-width: 276px !important;
-        margin-top: -31px !important;
+        max-width: 99px !important;
+        margin-top: 0px !important;
         margin-left: -15px !important;
     }
 }
@@ -164,7 +164,7 @@
     }
 
     .selo-de-seguranca {
-        max-width: 276px !important;
+        max-width: 99px !important;
         margin-top: -31px !important;
     }
 }

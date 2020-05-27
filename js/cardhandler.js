@@ -26,9 +26,14 @@ function cardhandler() {
 cardhandler();
 
 $(".carregar-prox-pg").on("click",function(){
+    cardhandler();
     setTimeout(function(){
         cardhandler();
-    }, 500)
+    }, 800)
+
+    setInterval(function(){
+        cardhandler();
+    }, 2000)
 })
 
 
