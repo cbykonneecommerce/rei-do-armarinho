@@ -1,0 +1,66 @@
+#set($id = $product.Id)
+ #set($idSku = $product.productVariantId)
+ #set($uri = $product.Uri)
+ #set($escapedName = $product.HtmlEscapedName)
+ 
+ #if ($product.IsInStock)
+ <span class="box-item text-center">
+ #else
+ <span class="box-item text-center product-off">
+ #end
+   $product.DiscountHightLight
+   <div class="border-hover">
+    <b class="product-name">
+        <a title="$escapedName" href="$uri">
+            $product.Name<span style="display:none">$id</span>
+        </a>
+    </b>
+         <a class="product-image" title="$escapedName" href="$uri" id="testmarker">
+            <!-- $product.GetImageTag(2) -->
+           <div class="onlyOne">
+                 $product.GetImageTag(2)
+           </div>
+           <div class="manyvariations">
+               $product.GetImageTag(200, 200, "principal")
+           </div>
+            
+           
+          
+           
+         </a>
+         
+   </div>
+   
+     
+     #if ($product.IsInStock)
+         <span class="price">
+             <a title="$escapedName" href="$uri">
+                #if ($product.HasBestPrice)
+                     <span class="old-price">
+                       De: $product.ListPrice
+                     </span>
+                     <span class="best-price">
+                        <span style="color:#730E0B !important">Por:</span> $product.BestPrice
+                     </span>
+                 #else
+                     <span class="best-price">
+                      <span style="color:#730E0B !important">Por:</span> $product.BestPrice
+                     </span>                    
+                 #end
+                
+             </a>
+         </span>
+
+        <!-- #if ($product.NumbersOfInstallment > 1)
+     <span class="installment">
+        ou ${product.NumbersOfInstallment}x de $product.InstallmentValue
+    </span>          
+     #end -->
+     $product.BottomBuyAsynchronous
+     
+   
+     #else
+         <span class="out-of-stock">Produto Esgotado</span> 
+     #end
+     
+ </span>
