@@ -60,7 +60,10 @@ $(document).ready(function () {
             $(`.dropdown-btn#${element.name} i`).attr('class', 'fa fa-angle-down');
         })
 
-               element.children.forEach((subs, index) => {
+        element.children.sort( function( a, b ) {
+            return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+        });
+                    element.children.forEach((subs, index) => {
                       //  console.log("adding children");
                       //  console.log(subs)
                         let divtextsub = subs.name;
@@ -70,7 +73,10 @@ $(document).ready(function () {
                        
                        if(!subs.hasChildren) {
                         $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${element.name}"><a href="${subs.url}">${divtextsub}</a></span></div>`);
-
+                        $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
+                            // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
+                             $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide();
+                         });
                        }
                        
 
@@ -97,7 +103,7 @@ $(document).ready(function () {
                             //Desktop
                             $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
                                // $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
-                                $(`.deptonav .row .col-sm-4.secondLayer`).hide();
+                                $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide();
                                 $(`.depto-${element.name} .row .col-sm-4.thirdLayer`).hide()
                                 $(`.depto-${element.name} .row .col-sm-4.secondLayer-${subs.name}`).show()
                             });
@@ -118,7 +124,9 @@ $(document).ready(function () {
                      
 
                            
-                                     
+                             subs.children.sort( function( a, b ) {
+                                return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+                            });  
 
                             subs.children.forEach((grandsubs) => {
                               //  console.log("adding grandchildren");
@@ -181,7 +189,9 @@ $(document).ready(function () {
                                                                
 
 
-
+                                     grandsubs.children.sort( function( a, b ) {
+                                        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+                                    });
                                     grandsubs.children.forEach((ggsubs, index) => {
                                       //  console.log("adding grandgrandchildren");
                                       //  console.log(ggsubs);

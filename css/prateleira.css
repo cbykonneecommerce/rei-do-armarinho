@@ -112,8 +112,22 @@ max-width: 70%;
 }
 
 .prateleira .product-image img {
-    max-width: 150px !important;
+    max-width: 136px !important;
 }
+
+
+.border-hover {
+    
+    padding: 9px;
+}
+
+.prateleira .box-item:hover .border-hover{
+    border: solid 2px #931A29 !important;
+    border-radius: 15px;
+}
+
+
+
 
 @media (max-width: 600px)  {
     

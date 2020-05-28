@@ -60,9 +60,7 @@ $(document).ready(function () {
             $(`.dropdown-btn#${element.name} i`).attr('class', 'fa fa-angle-down');
         })
 
-        element.children.sort( function( a, b ) {
-            return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
-        });
+        element.children.sort( (a, b) => a.name.localeCompare(b.name, 'pt', {ignorePunctuation: true}));
                     element.children.forEach((subs, index) => {
                       //  console.log("adding children");
                       //  console.log(subs)
@@ -124,9 +122,7 @@ $(document).ready(function () {
                      
 
                            
-                             subs.children.sort( function( a, b ) {
-                                return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
-                            });  
+                             subs.children.sort( (a, b) => a.name.localeCompare(b.name, 'pt', {ignorePunctuation: true}));  
 
                             subs.children.forEach((grandsubs) => {
                               //  console.log("adding grandchildren");
@@ -189,9 +185,7 @@ $(document).ready(function () {
                                                                
 
 
-                                     grandsubs.children.sort( function( a, b ) {
-                                        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
-                                    });
+                                     grandsubs.children.sort( (a, b) => a.name.localeCompare(b.name, 'pt', {ignorePunctuation: true}));
                                     grandsubs.children.forEach((ggsubs, index) => {
                                       //  console.log("adding grandgrandchildren");
                                       //  console.log(ggsubs);
