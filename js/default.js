@@ -93,7 +93,7 @@ function param(name) {
 							
 										<button class="btn btn-menos-check" style="background-color: transparent;outline-style: none;
 									box-shadow: none;"><img src="/arquivos/menos.png" alt="" style="width: 22px;"></button>
-									<input type="number" class="qtd-field" value="1" style="width: 50px;
+									<input type="number" class="qtd-field" value="${latest.quantity}" style="width: 50px;
 									margin: 11px;
 									padding-left: 11px;
 									font-size: 18px !important;
