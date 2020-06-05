@@ -10,7 +10,7 @@ function cardhandler() {
             if(product.skus.length > 1) {
                 moreThanOne = true
             }
-    console.log(moreThanOne)
+   // console.log(moreThanOne)
         
         });
     
@@ -29,12 +29,16 @@ $(".carregar-prox-pg").on("click",function(){
     cardhandler();
     setTimeout(function(){
         cardhandler();
-    }, 800)
+    }, 2300)
 
-    setInterval(function(){
-        cardhandler();
-    }, 2000)
-})
+  
+});
+
+setInterval(() => {
+    cardhandler();
+}, 1000);
+
+
 
 
 
