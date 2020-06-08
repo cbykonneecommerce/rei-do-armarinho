@@ -1,0 +1,231 @@
+
+
+
+/* /files/checkout5-custom.css */
+
+
+hr {
+    border-top: 1px solid lightgray !important;
+}
+
+
+
+.icon {
+  color: #333;
+}
+
+
+
+.cart {
+  padding: 0 !important;
+  border: 1px solid #C8C8C8 !important;
+  border-radius: 0px !important;
+}
+
+.cart-items thead {
+  background-color: #8D7573;
+    text-transform: uppercase;
+    color: white;
+}
+
+.cart-items .product-name a, .shipping-estimate-date, .new-product-price, .total-selling-price {
+  color: #4F4F4F !important;
+}
+
+.quantity input {
+  border: none !important;
+    box-shadow: none !important;
+}
+
+#shipping-preview-container h2 {
+  color: #333;
+}
+
+.link-coupon-add {
+  color: #BDBDBD;
+    text-transform: uppercase;
+}
+
+
+#shipping-calculate-link {
+  background-color: white !important;
+    color: #931A29 !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    border: solid 2px #931A29 !important;
+}
+
+
+.full-cart .summary-totalizers .info {
+    text-align: right;
+}
+
+.full-cart .totalizers tfoot td {
+    font-size: 18px;
+    color: #333!important;
+    font-weight: bold;
+    padding: 7px;
+}
+
+.full-cart .summary-totalizers tr {
+    border-bottom: none !important;
+}
+
+#cart-to-orderform, #btn-client-pre-email, #go-to-shipping, #btn-go-to-payment, #payment-data-submit{
+     text-shadow: none !important;
+    background-image: none !important;
+    border-color: transparent !important;
+    box-shadow: none;
+    border: none;
+    background-color: #000 !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    /* height: 35px; */
+    color: white;
+    /* margin-top: 35%; */
+    /* text-shadow: none; */
+    border-radius: 0;
+}
+
+
+#cart-choose-more-products {
+     color: #8D7573!important;
+    font-weight: bolder !important;
+    text-transform: uppercase !important;
+    border: solid 1px #8D7573!important;
+    border-radius: 0px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.step.active, .cart.active, .totalizers.active {
+  border-color: #DDD6CC!important;
+}
+
+.step {
+      border: 2px solid #DDD6CC!important;
+    border-radius: 0px;
+}
+
+.step .text input {
+      border: 1px solid #DDD6CC !important;
+}
+
+
+.vtex-omnishipping-1-x-option:hover, .vtex-omnishipping-1-x-leanShippingOptionActive, .steps-view, .gift-card-section, body, .mini-cart .summary-template-holder {
+  background: white !important;
+}
+
+.SecurityEnvironmentIcon {
+  background: #8D7573 !important;
+    color: white !important;
+}
+
+.vtex-omnishipping-1-x-leanShippingGroupList {
+ border: 1px solid #DDD6CC !important
+}
+
+.accordion-heading span {
+  color: #333;
+    text-transform: uppercase;
+}
+
+.vtex-omnishipping-1-x-leanShippingIcon svg path {
+      fill: #DDD6CC;
+}
+
+.vtex-omnishipping-1-x-summaryChange {
+  border: 1px dashed #8D7573 !important;
+    color: #8D7573 !important;
+}
+
+.icon-edit {
+  color: #931A29 !important;
+}
+
+.PaymentCardNumber input, .PaymentCardCVV input, .PaymentInstallments select, select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  border: 1px solid #DDD6CC !important;
+}
+
+
+.mini-cart h2 {
+  background-color: transparent !important;
+  text-align: left !important;
+      padding: 13px 22px !important;
+    text-transform: uppercase;
+    color: #333!important;
+}
+
+.mini-cart .item {
+  border-top: none !important;
+}
+
+.mini-cart .cart {
+  border: white !important;
+}
+
+.cart-fixed {
+      height: auto !important;
+    border: 2px solid #DDD6CC!important;
+    border-radius: 0px;
+    padding: 3px;
+}
+
+.mini-cart .table tfoot td {
+  color: #333 !important;
+}
+
+.badge {
+  color: white !important;
+    background-color: #333 !important;
+  }
+
+
+.payment-group-item.active{
+      background-color: transparent !important;
+}
+
+#payment-group-creditCardPaymentGroup .payment-group-item-text, #payment-group-PayPalPlusPaymentGroup .payment-group-item-text, #payment-group-bankInvoicePaymentGroup .payment-group-item-text {
+  color: #333
+}
+
+
+@media screen and (min-width: 1200px) {
+ 
+  
+  .product-image img {
+  height: 70px !important;
+    max-width: 70px !important;
+    width: 70px !important;
+}
+}
+
+
+@media screen and (max-width: 1100px) {
+ 
+.step {
+      padding:20px;
+}
+}
+
+
+@media (max-width: 600px) {
+.accordion-heading span {
+    margin-left: 1% !important;
+}
+}
+
+@media (max-width: 600px) {
+span {
+    margin-left: 0px !important;
+}
+}
+
+
+
+
+
+
