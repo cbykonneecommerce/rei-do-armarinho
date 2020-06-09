@@ -205,7 +205,8 @@ function clientSave()
         "cep": $("#cep").val(),
         "celular": $("#celular").val(),
         "telefone": $("#telefone").val(),
-        "email": $("#email").val()
+        "email": $("#email").val(),
+        "complemento": $("#complemento").val()
 	};
 
 	var urlSaveDadosUser = '/api/dataentities/BC/documents/';
