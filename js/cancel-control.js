@@ -1,3 +1,26 @@
+$(document).ready(function () {
+    $(".myo-order-card").each(function(){
+        let status = $(".tr-ns.mt2-ns .dib span span", this).text();
+        console.log(status);
+        if(status != "Processando Pagamento"){
+            $(".myo-cancel-btn",this).remove();
+            $(".db.dib-ns.mb5.mb0-ns").remove()
+        }
+    })
+});
+
+setInterval(()=>{
+    $(".myo-order-card").each(function(){
+        let status = $(".tr-ns.mt2-ns .dib span span", this).text();
+        
+        if(status != "Processando Pagamento"){
+            $(".myo-cancel-btn",this).remove();
+            $(".db.dib-ns.mb5.mb0-ns").remove()
+        }
+    })
+},1000)
+
+
 
 $(".myo-order-card").each(function(){
     let status = $(".tr-ns.mt2-ns .dib span span", this).text();

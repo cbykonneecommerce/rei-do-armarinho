@@ -37,11 +37,18 @@
 
 #carouselmarcas img {
     max-width:80%;
-    text-align:center
+    text-align:center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    
+}
+#carouselmarcas img:hover{
+    filter: none;
+    transition: 0.2s;
     
 }
 
-.product-carousel .prateleira.vitrine h2 {
+.product-carousel .prateleira.vitrine h2, .product-carousel-last .prateleira.vitrine h2 {
     display: none;
 }
 

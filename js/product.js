@@ -83,6 +83,17 @@ if( !(skuJson.skus.length == 1)) {
       $(".product-details .seletor-sku .specification").text("Selecione uma cor")
 
 
+
+
+      const mq = window.matchMedia("(max-width: 600px)");
+
+      if (mq.matches) {
+        $(".selector-sector .seletor-sku .select label").click(()=>{
+            $('html,body').animate({scrollTop: $(".product-description").offset().top - 900});
+          })
+      }
+     
+
       
 }, 500);
 

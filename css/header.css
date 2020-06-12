@@ -510,7 +510,11 @@
     border-top: 1px solid #390D0C;
 }
 .vtexIdUI a {
-    color: white !important
+    color: #931A29 !important;
+}
+
+.vtexIdUI .btn {
+    box-shadow: none !important;
 }
 
 .vtexIdUI .modal-header .close {
