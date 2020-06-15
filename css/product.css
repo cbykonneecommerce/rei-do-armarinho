@@ -861,7 +861,7 @@ color: #390D0C;
     
     .product-details .codigo-produto span, .product-details .codigo-produto div {
         display: inline;
-        font-size: 11px !important;
+        font-size: 10px !important;
     }
 
     #yv-review-quickreview a, #yv-review-quickreview strong {
@@ -880,6 +880,14 @@ color: #390D0C;
         
     width: 96%;
     text-align: center;
+    }
+
+    .desk-info-nav a {
+        font-size: 16px !important;
+    }
+
+    .selector-sector .seletor-sku .select label.hide-me {
+        display: none;
     }
 }
 
@@ -977,6 +985,14 @@ color: #390D0C;
     .product-details .seletor-sku .specification{
         margin-top: -2px;
     }
+}
+
+
+@media (min-width: 1700px) {
+    .buy-button-box{
+        margin-top: 9em !important;
+    }
+  
 }
 
 
