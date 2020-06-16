@@ -221,6 +221,7 @@ $(document).on('click', ".product-remover", function(event){
     console.log("removido");
     
     $($(".mini-cart-item")[rowindex]).remove();
+    $("#mini-cart-admake-total").text("R$ " + formatReal(res.value));
 
   });
 })

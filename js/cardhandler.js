@@ -6,7 +6,7 @@ function cardhandler() {
         myId= parseInt(myId);
         let moreThanOne = false
         await vtexjs.catalog.getProductWithVariations(myId).done(function(product){
-            console.log(product);
+            //console.log(product);
             if(product.skus.length > 1) {
                 moreThanOne = true
             }

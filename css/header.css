@@ -510,7 +510,11 @@
     border-top: 1px solid #390D0C;
 }
 .vtexIdUI a {
-    color: white !important
+    color: #931A29 !important;
+}
+
+.vtexIdUI .btn {
+    box-shadow: none !important;
 }
 
 .vtexIdUI .modal-header .close {
@@ -551,7 +555,7 @@
         margin-top: 10px
     }
     .link-logo img {
-        max-width: 144px;
+        max-width: 116px;
     }
     .btn-buscar {
         max-width: 18px;
@@ -587,5 +591,8 @@
         justify-content: space-between;
     }
 
+    .header {
+        margin-bottom: -10px;
+    }
     
 }
