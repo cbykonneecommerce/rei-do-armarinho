@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title>Rei do Armarinho</title>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <link href="/arquivos/welcome.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        html { 
+  background:url(/arquivos/banner-atacado.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#buttons-selector {
+    margin-top: 26%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 102%;
+}
+
+.btn-basic {
+    color: white !important;
+    text-transform: uppercase;
+    -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 4px 0px;
+    background-color: #931A29 !important;
+    font-weight: bold !important;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px !important;
+    background-image: none !important;
+    border-color: none !important;
+    text-shadow: none !important;
+    padding: 18px 68px;
+    font-size: 22px;
+}
+
+.btn-hollow {
+    color: #931A29 !important;
+    font-weight: bolder !important;
+    text-transform: uppercase !important;
+    border: solid 2px #931A29 !important;
+    border-radius: 10px;
+    padding: 18px;
+    font-size: 22px;
+    text-decoration: none;
+}
+    </style>
+
+</head>
+
+<body id="home-page">
+
+    <div class="page">
+
+        <div class="container-fluid" style="    position: absolute;
+        left: 5%;
+        top: 60%;">
+            <div class="row">
+                <div class="col-xs-12" style="text-align: center;">
+                    <h4 style="color: #931A29">ATACADO | ACESSO EXCLUSIVO.</h4>
+                    <div id="buttons-selector">
+                        <a class="btn-hollow" href="/Sistema/401">ME CADASTRAR</a>
+                        <a class="btn-basic" href="/login">ENTRAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- .container-fluid -->
+
+</body>
+<vtex:template id="commonScripts" />
+
+</html>
