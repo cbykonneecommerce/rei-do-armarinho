@@ -324,7 +324,9 @@ span#spnRatingProdutoTop {
     box-shadow: none !important;
     display: inline-block !important;
 }
-
+.buy-button-box .box-qtd .btn img {
+    z-index: 99999;
+}
 input.qtd.pull-left {
     background-color: white !important;
 }
@@ -929,6 +931,9 @@ color: #390D0C;
 
     .product-details .seletor-sku .topic {
         max-height: 465px;
+    }
+    .product-details .product-name .productName, .product-details .seletor-sku .specification {
+        font-size: 20px;
     }
     
 }

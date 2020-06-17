@@ -64,12 +64,21 @@ if( !(skuJson.skus.length == 1)) {
 }
 
 
-
-    const price = skuJson.skus[0].bestPrice;
-    if( price < 10000) {
-        $(".valor-dividido").hide();
-        $(".shipping-box").hide()
+//checar se primeiro item tem estoque
+//let price = skuJson.skus[0].bestPrice;
+for(let i = 0; i < skuJson.skus.length; i++){
+    if(skuJson.skus[i].available && skuJson.skus[i].bestPrice > 0) {
+        let price = skuJson.skus[i].bestPrice;
+        console.log(price)
+        if( price < 10000) {
+            $(".valor-dividido").hide();
+            $(".shipping-box").hide()
+        }
+        break;
     }
+}
+
+    
   
 
     let descriptionShort = $(".productDescription").text();
