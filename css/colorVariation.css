@@ -15732,7 +15732,7 @@ color: #fff!important;
 
 .selector-sector .seletor-sku .select label.skuespec_00885-P{
    
-    color: #fff !important;
+    color: #333 !important;
     background-color: #DBD5C7;
     border-color: #DBD5C7    !important;
 }   
@@ -27161,4 +27161,11 @@ color: #fff!important;
     color: #fff !important;
     background-color: #3D0526;
     border-color: #3D0526      !important;
+}
+
+.selector-sector .seletor-sku .select label.skuespec_6000-jeans{
+   
+    color: #fff !important;
+    background-color: #4D4D50;
+    border-color: #4D4D50      !important;
 }
