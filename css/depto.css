@@ -141,6 +141,7 @@
     border: 1px solid #390D0C !important;
     border-radius: 15px;
     width: 100%;
+    margin-top: 1em;
 }
 
 @media screen and (max-width: 1900px) {
