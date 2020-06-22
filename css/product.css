@@ -278,6 +278,8 @@
 .buy-button-box .box-qtd .bts {
     width: 50% !important;
     box-shadow: none !important;
+    display: block;
+    height: auto;
 }
 
 .buy-button-box .box-qtd .qtd {
@@ -326,6 +328,8 @@ span#spnRatingProdutoTop {
 }
 .buy-button-box .box-qtd .btn img {
     z-index: 99999;
+    display: block;
+    height: auto;
 }
 input.qtd.pull-left {
     background-color: white !important;
@@ -971,7 +975,7 @@ color: #390D0C;
 
 @media (max-width: 1700px) {
     .selector-sector .seletor-sku .select label {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
   
 }
