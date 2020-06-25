@@ -1,0 +1,118 @@
+.politicas-comerciais {
+    display: flex;
+    align-items: center;
+}
+.politicas-comerciais ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.sobre-durval {
+    background-color: #8D7573;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+.sobre-durval a {
+    color: white;
+    text-decoration: underline;
+}
+
+.sobre-durval p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.politicas-comerciais ul li img{
+    max-width: 90%;
+}
+
+.home-title {
+    color: #390D0C;
+}
+
+#carouselmarcas img {
+    max-width:80%;
+    text-align:center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    
+}
+#carouselmarcas img:hover{
+    filter: none;
+    transition: 0.2s;
+    
+}
+
+.product-carousel .prateleira.vitrine h2, .product-carousel-last .prateleira.vitrine h2 {
+    text-align: left !important;
+    color: #390D0C;
+    font-size: 24px !important;
+    margin-bottom: 1em;
+}
+
+.yv-testimonial .yv-title {
+    display: none;
+}
+
+
+.yv-testimonial .slick-slide div div:first-child:not(.yv-img-circle) {
+    background-color: #390D0C !important;
+    color: white !important;
+}
+
+.yv-img-circle {
+    background-color: white !important;
+}
+#triangle-down {
+    border-top: 10px solid #390D0C !important;
+}
+
+.bootstrap .secondary, .yv-bootstrap .secondary {
+    color: white !important;
+}
+.prateleira .box-item {
+    height: 28.5em !important;
+}
+
+.prateleira .product-image img {
+    max-width: 200px;
+}
+
+@media screen and (max-width: 800px) {
+    #sobre p, #sobre h3 {
+        text-align: center;
+    }
+
+    .sobre-durval {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+
+#carouselpropostas .owl-item .item  img{
+    text-align: center;
+    width: auto;
+    max-height: 42px;
+}
+
+#carouselpropostas .owl-item .item {
+    text-align: center;
+}
+
+
+.prateleira .box-item {
+  
+    padding: 10px 15px !important; 
+    }
+
+    #sidebysidebanner .col-xs-12{
+        margin-bottom: 1em;
+    }
+
+
+}

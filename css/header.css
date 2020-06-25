@@ -27,7 +27,9 @@
 }
 
 
-
+.box-banner a img {
+    height: auto;
+}
 #top-menu {
     position: sticky;
     top: 9.9em;
