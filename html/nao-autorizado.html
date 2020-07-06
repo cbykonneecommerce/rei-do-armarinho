@@ -13,7 +13,7 @@
 
 <body id="auto-page">
 
-    <div class="page" style="background-color: #EDE1C8;">
+    <div class="page">
 
         <!--  SubTemplate: Header -->
         <vtex:template id="Header" />
@@ -64,6 +64,13 @@
                             <label class="control-label" for="im">IM</label>
                             <input type="text" class="form-control" id="im" placeholder="IM"/>
                         </div>
+
+                        <div class="col-sm-4" id="inscriçãocampo">
+                            <label class="control-label" for="inscriacaoEstadual">Inscrição estadual</label><div class="checkbox" style="display: inline;">
+                                <label>Isento</label><input type="checkbox"  id="teminscricao" style=" margin-left: 1em; margin-top: -5px;"/>
+                              </div>
+                            <input type="text" class="form-control" id="inscriacaoEstadual" placeholder="Inscrição estadual"/>
+                        </div>
                     </div>
 
                    
@@ -73,23 +80,6 @@
                   
                 </div>
 
-                <div class="form-group">
-<div class="row">
-    <div class="col-sm-1">
-        <div class="checkbox">
-            <label>Isento</label><input type="checkbox"  id="teminscricao" style=" margin-left: 1em; margin-top: -5px;"/>
-          </div>
-       
-    </div>
-    <div class="col-sm-4" id="inscriçãocampo" style="margin-left: 2em;">
-        <label class="control-label" for="inscriacaoEstadual">Inscrição estadual</label>
-        <input type="text" class="form-control" id="inscriacaoEstadual" placeholder="Inscrição estadual"/>
-    </div>
-</div>
-                   
-
-                  
-                </div>
                 <div class="form-group">
                     <div class="row">
                         <div class="col-sm-4">
@@ -157,7 +147,7 @@
                             <input type="tel" class="form-control" id="celular" placeholder="Celular/ Whatsapp"/>
                         </div>
                         
-                        <div class="col-sm-2">
+                        <div class="col-sm-4">
                             <label class="control-label" for="telefone">Telefone</label>
                             <input type="tel" class="form-control" id="telefone" placeholder="Telefone"/>
                         </div>

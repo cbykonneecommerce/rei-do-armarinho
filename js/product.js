@@ -66,17 +66,7 @@ if( !(skuJson.skus.length == 1)) {
 
 //checar se primeiro item tem estoque
 //let price = skuJson.skus[0].bestPrice;
-for(let i = 0; i < skuJson.skus.length; i++){
-    if(skuJson.skus[i].available && skuJson.skus[i].bestPrice > 0) {
-        let price = skuJson.skus[i].bestPrice;
-        console.log(price)
-        if( price < 10000) {
-            $(".valor-dividido").hide();
-            $(".shipping-box").hide()
-        }
-        break;
-    }
-}
+
 
     
   
@@ -106,6 +96,20 @@ for(let i = 0; i < skuJson.skus.length; i++){
       
 }, 500);
 
+
+setTimeout(()=>{
+    for(let i = 0; i < skuJson.skus.length; i++){
+        if(skuJson.skus[i].available && skuJson.skus[i].bestPrice > 0) {
+            let price = skuJson.skus[i].bestPrice;
+            console.log(price)
+            if( price < 10000) {
+                $(".valor-dividido").hide();
+                $(".shipping-box").hide()
+            }
+            break;
+        }
+    }
+},1000)
 
 $(".desk-info-nav a").click((e)=>{
     $(".desk-info-nav a").css({"color":"#BEBEBE"});

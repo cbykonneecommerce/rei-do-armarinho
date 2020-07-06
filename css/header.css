@@ -10,7 +10,6 @@
 .ui-autocomplete {
     z-index: 9999999999 !important;
     width: 546px ! important;
-    border: solid 2px #931A29;
     border-radius: 10px !important;
 }
 
@@ -28,7 +27,9 @@
 }
 
 
-
+.box-banner a img {
+    height: auto;
+}
 #top-menu {
     position: sticky;
     top: 9.9em;

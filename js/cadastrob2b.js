@@ -173,9 +173,9 @@ $("#celular").on("keyup", function(e){
 $('#teminscricao').click(()=>{
     if ($('#teminscricao').is(":checked"))
 {
-    $("#inscriçãocampo").hide();
+    $("#inscriacaoEstadual").hide();
 } else {
-    $("#inscriçãocampo").show();
+    $("#inscriacaoEstadual").show();
 }
 })
 

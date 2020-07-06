@@ -979,7 +979,7 @@
            text-align: center;
            display: block;
            width: 100%;
-           height: 50%;
+           height: 100%;
            border-radius: 0;
            background-color: transparent;
            padding: 0;
@@ -990,9 +990,7 @@
          .buy-button-box .box-qtd .btn:hover{
            background-color: #F6F6F6;
          }
-         .buy-button-box .box-qtd .btn.btn-mais{
-           border-bottom: 1px solid #ccc;
-         }
+         
      .product-description .buy-together-content td.buy .comprar-junto a,
      .buy-button.buy-button-ref{
        background-color: #5CB85C;

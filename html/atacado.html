@@ -18,6 +18,12 @@
   background-size: cover;
 }
 
+.container-fluid {
+    position: absolute;
+        left: 5%;
+        top: 60%;
+}
+
 #buttons-selector {
     margin-top: 26%;
     display: flex;
@@ -53,6 +59,51 @@
     padding: 18px;
     font-size: 22px;
     text-decoration: none;
+    background-color: white;
+}
+
+@media screen and (min-width:1200px) and (max-width: 1600px) {
+
+    #buttons-selector {
+        margin-top: 22%
+    }
+
+    .btn-basic {
+        padding: 12px 62px;
+        font-size: 20px;
+    }
+    .btn-hollow {
+        padding: 12px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html { 
+  background:url(/arquivos/banner-atacado-mob.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn-basic, .btn-hollow {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 18px;
+}
+#buttons-selector {
+    display: block;
+    width: 100%;
+    margin-top: 10%;
+
+}
+
+.container-fluid {
+    left: 15%;
+    top: 21%;
+}
+
 }
     </style>
 
@@ -62,15 +113,13 @@
 
     <div class="page">
 
-        <div class="container-fluid" style="    position: absolute;
-        left: 5%;
-        top: 60%;">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12" style="text-align: center;">
                     <h4 style="color: #931A29">ATACADO | ACESSO EXCLUSIVO.</h4>
                     <div id="buttons-selector">
-                        <a class="btn-hollow" href="/Sistema/401">ME CADASTRAR</a>
-                        <a class="btn-basic" href="/login">ENTRAR</a>
+                        <a class="btn-hollow" href="atacado.reidoarmarinho.com.br/Sistema/401">ME CADASTRAR</a>
+                        <a class="btn-basic" href="atacado.reidoarmarinho.com.br/login">ENTRAR</a>
                     </div>
                 </div>
             </div>
