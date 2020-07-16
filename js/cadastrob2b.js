@@ -188,7 +188,7 @@ $('#teminscricao').click(()=>{
 
 
 
-function clientSave()
+async function clientSave()
 {
 
 
@@ -207,27 +207,55 @@ function clientSave()
         "telefone": $("#telefone").val(),
         "email": $("#email").val(),
         "complemento": $("#complemento").val()
-	};
+    };
+    
 
-	var urlSaveDadosUser = '/api/dataentities/BC/documents/';
+    let alreadyRequested = false;
+    let cnpjchecker = jsonSaveDadosUser.cnpj.replace(/[\s-/,]+/g, '');
+    let results = await fetch(`/api/dataentities/BC/search?_fields=cnpj&cnpj=*${cnpjchecker}*`, {
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json', "Accept": "application/vnd.vtex.ds.v10+json"
+        }
+      })
+        .then(response => {
+          return response.json();
+        });
+      console.log(results);
+      
+      if(results.length >= 1 ) {
+        alreadyRequested = true;
+      }
 
-	$.ajax({
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		data: JSON.stringify(jsonSaveDadosUser),
-		type: 'PATCH',
-		url: urlSaveDadosUser,
-		success: function (data) {
-		  console.log(data);
-		  $("div#messageSuccess").removeClass("hide");
-		 
-		},
-		error: function (data) {
-		  console.log(data);
-		  $("div#messageError").removeClass("hide");
-		}
-	});
+      if(alreadyRequested) {
+          alert("Seu formulário de cadastro já foi enviado, aguarde sua aprovação.");
+      } else {
+          console.log("nao existo ainda")
+
+        var urlSaveDadosUser = '/api/dataentities/BC/documents/';
+
+        $.ajax({
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            data: JSON.stringify(jsonSaveDadosUser),
+            type: 'PATCH',
+            url: urlSaveDadosUser,
+            success: function (data) {
+              console.log(data);
+              $("div#messageSuccess").removeClass("hide");
+             
+            },
+            error: function (data) {
+              console.log(data);
+              $("div#messageError").removeClass("hide");
+            }
+        });
+      }
+
+
+
+
 }
 
 function clientValidate()
