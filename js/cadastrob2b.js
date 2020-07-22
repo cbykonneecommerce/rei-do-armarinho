@@ -209,7 +209,7 @@ async function clientSave()
         "complemento": $("#complemento").val()
     };
     
-
+// colocar e-mail tambem como campo
     let alreadyRequested = false;
     let cnpjchecker = jsonSaveDadosUser.cnpj.replace(/[\s-/,]+/g, '');
     let results = await fetch(`/api/dataentities/BC/search?_fields=cnpj&cnpj=*${cnpjchecker}*`, {
