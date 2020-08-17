@@ -260,6 +260,8 @@ async function clientSave() {
             success: function (data) {
                 console.log(data);
                 $("div#messageSuccess").removeClass("hide");
+                $('html,body').animate({scrollTop: $("body").offset().top});
+                $('#buttonSubmit').attr('disabled','disabled');
 
             },
             error: function (data) {
